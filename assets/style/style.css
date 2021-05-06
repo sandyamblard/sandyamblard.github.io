@@ -255,12 +255,13 @@ button {
   text-decoration: none;
   color: inherit;
   font-weight: 600;
-  opacity: 0.8;
+  opacity: 0.7;
 }
 .bottom a:hover {
   border-bottom: 3px solid black;
   opacity: 1;
-  font-weight: 800;
+  transition: all 0.4s;
+  transform: scale(1.5);
 }
 .bottom p {
   margin-top: 0.5em;
@@ -271,6 +272,10 @@ button {
 .bottom .fas, .bottom .fab {
   font-size: 1.3em;
   margin-right: 0.3em;
+}
+.bottom .fas:hover, .bottom .fab:hover {
+  transform: scale(1.5);
+  transition: 0.3s;
 }
 
 /*# sourceMappingURL=style.css.map */

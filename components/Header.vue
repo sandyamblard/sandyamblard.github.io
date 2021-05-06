@@ -7,7 +7,7 @@
         <div v-if="!menuOpen" class="mobonly" @click="openMenu" @keyup.enter="openMenu" role="button" tabindex=0>
             MENU<br><i class="fas fa-bars"></i>
         </div>
-        <button v-if="menuOpen" @click="closeMenu" class="closemenumob"><i class="fas fa-times"></i><br>CLOSE</button>
+        <button v-if="menuOpen" @click="closeMenu" class="closemenumob"><i class="fas fa-times"></i><br>FERMER</button>
         <nav class="nav">
             <NuxtLink to='/webdev'><i class="fas fa-code"></i><p>Développeuse</p></NuxtLink>
             <NuxtLink to='/veto'><i class="fas fa-stethoscope"></i><p>Vétérinaire</p></NuxtLink>
@@ -36,7 +36,7 @@ export default {
     //setTimeout( ()=>document.querySelector('.topbar').style.height = 'auto', 300)
         document.querySelector('.topbar').style.display = 'block';
         document.querySelector('.topbar img').style.marginTop = '0';
-        document.querySelector('.nav').style.display = 'block';
+         document.querySelector('.nav').style.display = 'block';
       }, 
       closeMenu : function(){
         this.menuOpen = false;
