@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins" /*"Baloo 2"*/, sans-serif;
+}
+
+main {
+  min-height: 100vh;
+  @include tab-version {
+    padding-top: 20vw;
+  }
+  @include desk-version {
+    padding-top: 7vw;
+  }
+}
+
+button {
+  background-color: inherit;
+  border-color: transparent;
+  font-family: inherit;
+}

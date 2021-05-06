@@ -1,0 +1,184 @@
+.topbar {
+  margin-top: 0;
+  background-color: $color-primary;
+  height: 35vw;
+  width: 100%;
+  box-shadow: 0 0 8px grey;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  @include tab-version {
+    padding-top: 0.5em;
+    height: 20vw;
+    position: fixed;
+    top: 0;
+    display: block;
+  }
+  @include desk-version {
+    height: 7vw;
+    position: fixed;
+    top: 0;
+  }
+  & a {
+    text-decoration: none;
+    color: inherit;
+  }
+  & .fa-bars {
+    font-size: 2.2em;
+    margin-top: 0.2em;
+  }
+
+  & .mobonly {
+    font-size: 0.8em;
+    text-align: center;
+    @include desk-and-tab-version {
+      display: none;
+    }
+  }
+
+  & img {
+    max-height: 30vw;
+    width: auto;
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px grey;
+    border: ridge 2px $color-primary;
+    margin-top: 1em;
+    @include tab-version {
+      max-height: 13vw;
+      margin-top: 0;
+    }
+    @include desk-version {
+      max-height: 6vw;
+    }
+    &:hover {
+      transform: scale(1.4);
+      transition: 0.3s;
+    }
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 1.2em;
+  @include tab-version {
+    margin-bottom: 0.6em;
+  }
+
+  & p {
+    font-family: /*"Train One"*/ "Merienda One", cursive;
+    font-weight: 600;
+    font-size: 1.4em;
+    margin-left: 0.5em;
+    margin-top: 0;
+    @include desk-version {
+      margin-top: 1em;
+      font-size: 1.3em;
+    }
+    margin-bottom: 0;
+  }
+}
+
+.nav {
+  display: none;
+  @include tab-version {
+    display: flex;
+    justify-content: space-around;
+  }
+  & .fas {
+    font-size: 1.5em;
+    margin-bottom: 0;
+    margin-right: 0.5em;
+    @include tab-version {
+      margin-right: 0.2em;
+    }
+  }
+  & a {
+    text-transform: uppercase;
+    color: inherit;
+    text-decoration: none;
+    font-size: 0.9em;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    display: flex;
+    margin-bottom: 0.9em;
+    @include desk-and-tab-version {
+      margin-bottom: 0;
+    }
+    @include desk-version {
+      margin-left: 1.6em;
+      opacity: 0.7;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    &:hover {
+      opacity: 1;
+      transition: 0.3s;
+    }
+  }
+
+  & p {
+    margin-top: 0.4em;
+    margin-bottom: 0.1em;
+    &:hover {
+      //font-weight: 800;
+      text-decoration: underline;
+      transition: all 0.3s;
+    }
+  }
+
+  @include desk-version {
+    display: flex;
+  }
+}
+
+.fa-times {
+  transform: scale(2);
+}
+
+.closemenumob {
+  font-weight: 800;
+  //float: right;
+  position: absolute;
+  right: 1vw;
+  top: 11vw;
+}
+
+.menuappear {
+  animation: appearmenu 0.4s ease-in-out both;
+}
+
+@keyframes appearmenu {
+  0% {
+    //height: 35vw;
+    transform: scaleY(0);
+    transform-origin: top;
+    opacity: 0;
+  }
+  100% {
+    //height: auto;
+    transform-origin: top;
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+
+.expandtopbar {
+  animation: expand 0.2s ease-in-out both;
+}
+
+@keyframes expand {
+  0% {
+    height: 35vw;
+  }
+  50% {
+    height: 60vw;
+  }
+  100% {
+    height: auto;
+  }
+}
