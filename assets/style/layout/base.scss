@@ -11,9 +11,11 @@ main {
   min-height: 100vh;
   @include tab-version {
     padding-top: 20vw;
+    padding-bottom: 5em;
   }
   @include desk-version {
-    padding-top: 7vw;
+    padding-top: 92px;
+    padding-bottom: 5em;
   }
 }
 

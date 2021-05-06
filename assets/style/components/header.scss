@@ -17,7 +17,8 @@
     display: block;
   }
   @include desk-version {
-    height: 7vw;
+    //height: 5.5vw;
+    height: 90px;
     position: fixed;
     top: 0;
   }
@@ -50,7 +51,7 @@
       margin-top: 0;
     }
     @include desk-version {
-      max-height: 6vw;
+      max-height: 80px;
     }
     &:hover {
       transform: scale(1.4);
@@ -126,7 +127,8 @@
     margin-bottom: 0.1em;
     &:hover {
       //font-weight: 800;
-      text-decoration: underline;
+      border-bottom: 3px solid rgb(54, 54, 54);
+      // text-decoration: underline;
       transition: all 0.3s;
     }
   }
@@ -150,6 +152,10 @@
 
 .menuappear {
   animation: appearmenu 0.4s ease-in-out both;
+}
+
+.nav .nuxt-link-active {
+  border-bottom: 3px solid rgb(54, 54, 54);
 }
 
 @keyframes appearmenu {
