@@ -158,6 +158,9 @@
 
 .nav .nuxt-link-active {
   border-bottom: 3px solid rgb(54, 54, 54);
+  &:hover {
+    border-color: transparent;
+  }
 }
 
 @keyframes appearmenu {

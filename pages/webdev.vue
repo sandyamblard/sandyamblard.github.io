@@ -76,7 +76,7 @@ export default {
                         paragraphes: ['Travail sur SEO, performances et accessibilité'],
                         lien: 'Voir le GitHub du projet', link: 'https://github.com/sandyamblard/sandyamblard-4-12032021'}, 
             projetSix:{ img:'/groupomania.jpg' ,
-                        title: "Création du réseau social d'enteprise (Fullstack)", 
+                        title: "Création d'un réseau social d'enteprise (Fullstack)", 
                         paragraphes: ['Frontend avec VueJS (Design libre)', 'Back-end avec NodeJS, Express, MySql et Sequelize'],
                         icones: ['/minivue.png', '/mininode.png', '/minimysql.png', '/minisequelize.jpg'],
                         lien: 'Voir le GitHub du projet', link: 'https://github.com/sandyamblard/sandyamblard-7-30032021'},                                        }

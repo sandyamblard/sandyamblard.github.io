@@ -16,6 +16,7 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 1.5em;
+  margin-top: 0.8em;
   @include desk-and-tab-version {
     width: 45%;
   }
@@ -56,4 +57,20 @@
   height: 40px;
   width: auto;
   margin-top: 0.4em;
+}
+
+.expe--elevage .expe--img {
+  object-position: center 73%;
+}
+
+.expe--elevage .dev-icone {
+  height: 70px;
+  width: auto;
+}
+
+.chevres .expe--img {
+  object-position: center 35%;
+}
+.coureurs .expe--img {
+  object-position: center 58%;
 }

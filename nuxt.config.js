@@ -14,7 +14,7 @@ export default {
       { name: 'description', content: 'Site CV sandy Amblard construit avec nuxt pour tester !' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'icon', type: 'image/png', href: '/favicone.png' },
       { rel:"preconnect", href:"https://fonts.gstatic.com"},
       { rel: "stylesheet", href:"https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;800&family=Train+One&display=swap?family=Poppins:wght@200;400;600;800&display=swap&family=Merienda+One" }
     ],
