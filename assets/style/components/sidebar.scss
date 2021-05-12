@@ -1,0 +1,104 @@
+.contenu {
+  padding: 0em 0em 1em 0em;
+  flex: 70%;
+  background-color: $color-fond;
+
+  @media all and(min-width: $bkpt-big) {
+    flex: 75%;
+  }
+}
+.sidebar {
+  background-color: $color-tertiary;
+  padding: 1em;
+  flex: 30%;
+  @include tab-version {
+    padding-right: 15%;
+    padding-left: 15%;
+  }
+  @media all and(min-width: $bkpt-big) {
+    flex: 25%;
+  }
+  & li {
+    list-style: none;
+  }
+  & ul {
+    padding-left: 0.5em;
+    margin-bottom: 1.5em;
+  }
+  & .far.fa-star,
+  & .far.fa-comment {
+    color: lighten($color-secondary, 3%);
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-right: 0.4em;
+    margin-bottom: 0.4em;
+  }
+  & .fa-code,
+  & .fa-stethoscope,
+  & .fa-paw,
+  & .fa-trophy,
+  & .fa-camera {
+    background-color: lighten($color-secondary, 3%);
+    border-radius: 50%;
+    font-size: 1.1em;
+    padding: 0.4em;
+    margin-right: 0.4em;
+    margin-bottom: 0.2em;
+    color: white;
+    box-shadow: 2px 2px 4px grey;
+  }
+  & a {
+    text-decoration: none;
+    color: inherit;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  & h2 {
+    color: $color-secondary;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    margin-top: 2em;
+    &:nth-child(1) {
+      margin-top: 0.7em;
+    }
+    &::after {
+      content: "";
+      display: block;
+      width: 8em;
+      height: 0.15em;
+      background: linear-gradient(to right, $color-secondary, $color-tertiary);
+      margin-top: 0.5em;
+      border-radius: 5px;
+    }
+  }
+}
+
+.profil {
+  background-color: lighten($color-primary, 20%);
+  border-radius: 10px;
+  border: darken($color-primary, 15%) 2px solid;
+  box-shadow: 3px 3px 8px $color-secondary;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  @include desk-version {
+    margin: 1em;
+  }
+}
+
+.comp-item {
+  border-radius: 20px;
+  border: 2px lighten($color-secondary, 30%) solid;
+  box-shadow: 2px 2px 6px grey;
+  background-color: lighten($color-tertiary, 15%);
+  list-style: none;
+  padding-left: 0.5em;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  margin-bottom: 1em;
+  & .fa-star {
+    color: $color-secondary;
+    font-size: 1.2em;
+    margin-right: 0.5em;
+  }
+}

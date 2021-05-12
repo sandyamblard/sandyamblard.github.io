@@ -11,11 +11,14 @@ main {
   min-height: 100vh;
   @include tab-version {
     padding-top: 20vw;
-    padding-bottom: 5em;
+    padding-bottom: 2.5em;
   }
   @include desk-version {
     padding-top: 92px;
     padding-bottom: 5em;
+    display: flex;
+    flex-direction: row-reverse;
+    padding-bottom: 2.5em;
   }
 }
 
@@ -23,4 +26,17 @@ button {
   background-color: inherit;
   border-color: transparent;
   font-family: inherit;
+}
+
+h1 {
+  color: darken($color-primary, 50%);
+  margin-top: 0;
+  padding-top: 1em;
+  font-size: 1.8em;
+  text-align: center;
+}
+
+.contenu-item {
+  margin-right: 1em;
+  margin-left: 1em;
 }
