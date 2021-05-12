@@ -1,11 +1,47 @@
 <template>
   <main>
-    <section class='contenu'>
+    <section class='contenu contenu-item'>
       <h1>Bienvenue sur mon CV en ligne !</h1>
-      <p>De Docteur Vétérinaire à Développeur Web, en passant par éleveur et compétitrice, venez découvrir mes différentes expériences et champs de compétences au travers de ce site web. </p>
+      <p>De développeur Web à Docteur vétérinaire, en passant par éleveur et compétitrice, venez découvrir mes différentes expériences et champs de compétences au travers de ce site web. </p>
       <p>Bonne visite ! </p>
-      <p>boutons liens images stylées :-D</p>
-      <p>Citation à toruver ou formule</p>
+       <div class='index-links'>     
+          <NuxtLink to='/webdev' class='bann bann--dev'>
+            <div class='bann-caption'>
+              <p></p>
+                  <p>Développement web</p>
+                  <p>Voir en détails</p>
+            </div>
+          </NuxtLink>
+              
+          <NuxtLink to='/veto' class='bann bann--veto'>
+            <div class='bann-caption'>
+              <p></p>
+                  <p>Docteur Vétérinaire</p>
+                  <p>Voir en détails</p>
+            </div>
+          </NuxtLink>      
+          <NuxtLink to='/elevage' class='bann bann--elevage'>
+            <div class='bann-caption'>
+              <p></p>
+                  <p>Elevage</p>
+                  <p>Voir en détails</p>
+            </div>
+          </NuxtLink>  
+          <NuxtLink to='/competitions' class='bann bann--compet'>
+            <div class='bann-caption'>
+              <p></p>
+                  <p>Compétitions</p>
+                  <p>Voir en détails</p>
+            </div>
+          </NuxtLink>  
+          <NuxtLink to='/loisirs' class='bann bann--loisirs'>
+            <div class='bann-caption'>
+              <p></p>
+                  <p>Et plus encore !</p>
+                  <p>Voir en détails</p>
+            </div>
+          </NuxtLink>
+      </div>
     </section>
     <sidebar></sidebar>
  </main>

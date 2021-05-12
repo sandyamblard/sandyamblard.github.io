@@ -8,7 +8,10 @@ body {
 }
 
 main {
+  background-color: $color-fond;
   min-height: 100vh;
+  //display: flex;
+  //flex-direction: column-reverse;
   @include tab-version {
     padding-top: 20vw;
     padding-bottom: 2.5em;
@@ -30,13 +33,18 @@ button {
 
 h1 {
   color: darken($color-primary, 50%);
+  //color: $color-secondary;
   margin-top: 0;
   padding-top: 1em;
-  font-size: 1.8em;
+  font-size: 1.9em;
   text-align: center;
 }
 
 .contenu-item {
   margin-right: 1em;
   margin-left: 1em;
+  @media all and(min-width: $bkpt-big) {
+    margin-right: 7.5vw;
+    margin-left: 7.5vw;
+  }
 }

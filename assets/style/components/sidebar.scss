@@ -18,6 +18,10 @@
   @media all and(min-width: $bkpt-big) {
     flex: 25%;
   }
+  @media all and(min-width: $bkpt-big) {
+    padding-left: 3vw;
+    padding-right: 3vw;
+  }
   & li {
     list-style: none;
   }
@@ -82,7 +86,11 @@
   padding-left: 0.5em;
   padding-right: 0.5em;
   @include desk-version {
-    margin: 1em;
+    margin: 0.5em;
+  }
+  @media all and(min-width: $bkpt-big) {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 

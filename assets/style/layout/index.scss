@@ -1,0 +1,103 @@
+.bann {
+  display: block;
+  width: 95%;
+  height: 45vw;
+  margin-left: 2.5%;
+  text-decoration: none;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 55%;
+  box-shadow: 2px 2px 5px grey;
+  @include tab-version {
+    height: 25vw;
+    margin-left: 10%;
+    width: 80%;
+  }
+  @include desk-version {
+    margin-left: 12.25%;
+    width: 75%;
+    height: 25vw;
+  }
+  &:hover {
+    transform: scale(1.03);
+    box-shadow: 2px 2px 15px grey;
+    transition: 0.3s;
+  }
+  &-caption {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  & p {
+    color: lighten($color-primary, 15%);
+  }
+  & p:nth-child(2) {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 1.2em;
+    @include desk-and-tab-version {
+      font-size: 1.5em;
+    }
+  }
+  & p:nth-child(3) {
+    width: 100%;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 0;
+    @include desk-and-tab-version {
+      padding-top: 0.8em;
+      padding-bottom: 0.8em;
+    }
+  }
+}
+
+.bann--dev {
+  background-image: url("/code.jpg");
+  height: 68vw;
+  border-radius: 10px 10px 0 0;
+  @include tab-version {
+    height: 32vw;
+  }
+  @media all and(min-width: $bkpt-big) {
+    height: 20vw;
+  }
+}
+
+.bann--veto {
+  background-image: url("/vet.jpg");
+  @media all and(min-width: $bkpt-big) {
+    height: 14vw;
+  }
+}
+
+.bann--compet {
+  background-image: url("/bannloisirs(3).jpg");
+  @media all and(min-width: $bkpt-big) {
+    height: 14vw;
+  }
+}
+
+.bann--elevage {
+  background-image: url("/bannchiots.jpg");
+  @media all and(min-width: $bkpt-big) {
+    height: 14vw;
+  }
+  background-position-y: 50%;
+}
+
+.bann--loisirs {
+  background-image: url("/bannloisirs.jpg");
+
+  @media all and(min-width: $bkpt-big) {
+    height: 14vw;
+  }
+  border-radius: 0 0 10px 10px;
+  background-position-y: 75%;
+  & p:last-child {
+    border-radius: 0 0 10px 10px;
+  }
+}

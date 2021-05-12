@@ -10,7 +10,7 @@
   border-radius: 5px;
   background-color: white;
   //border: 1px ridge $color-primary;
-  box-shadow: 0px 0px 3px grey;
+  box-shadow: 0px 0px 3px darken($color-primary, 30%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -59,6 +59,25 @@
   margin-top: 0.4em;
 }
 
+.expe--perfs {
+  padding-left: 0;
+  & li {
+    list-style: none;
+    & .fa-medal {
+      margin-right: 0.5em;
+      margin-top: 0.25em;
+      font-size: 1.3em;
+      color: darken($color-primary, 45%);
+    }
+  }
+}
+
+.itemsolo {
+  @include desk-version {
+    width: 95%;
+  }
+}
+
 .expe--elevage .expe--img {
   object-position: center 73%;
 }
@@ -73,4 +92,15 @@
 }
 .coureurs .expe--img {
   object-position: center 58%;
+}
+.itemsolo .expe--img {
+  object-position: center 90%;
+}
+
+.maison .expe--img {
+  object-position: center 75%;
+}
+
+.randos .expe--img {
+  object-position: center 45%;
 }
