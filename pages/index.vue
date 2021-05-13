@@ -1,9 +1,8 @@
 <template>
   <main>
-    <section class='contenu contenu-item'>
+    <section class='contenu contenu-item' aria-label='Présentation et liens'>
       <h1>Bienvenue sur mon CV en ligne !</h1>
-      <p>De développeur Web à Docteur vétérinaire, en passant par éleveur et compétitrice, venez découvrir mes différentes expériences et champs de compétences au travers de ce site web. </p>
-      <p>Bonne visite ! </p>
+      <p class='intro'>De <NuxtLink to='/webdev'>développeur Web</NuxtLink> à <NuxtLink to='/veto'>Docteur vétérinaire</NuxtLink>, en passant par <NuxtLink to='/elevage'>éleveur</NuxtLink> et <NuxtLink to='/competitions'>compétitrice</NuxtLink>, venez découvrir mes différentes expériences et champs de compétences au travers de ce site web. </p>
       <a href="#sidebar"><triangle class='triangle-index'></triangle></a>
        <div class='index-links'>     
           <NuxtLink to='/webdev' class='bann bann--dev'>

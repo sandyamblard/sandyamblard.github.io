@@ -56,7 +56,7 @@ export default {
     data(){
         return{
             pointsforts: ['Ecoute et empathie', 'Sang-froid', 'Gestion de l\'urgence', 'Travail de nuit', 'Adaptabilité', 'Polyvalence'], 
-            competences:['Médecine et chirurgie canines','Acupuncture et phytothérapie', 'Analyses', 'Radiographie et Echographie', 'Relation client', 'Gardes nuits et week-end']
+            competences:['Médecine et chirurgie canines','Acupuncture et phytothérapie', 'Analyses', 'Radiographie et Echographie', 'Relation client', 'Relations humaines, psychologie', 'Gardes nuits et week-end']
             , expeUn: {
                     title: "Clinique Vétérinaire de l'Aiguille (Tarbes, 65)",
                     paragraphes:['De juin 2008 à juin 2019 : ', '- Clientèle canine, consultations et chirurgies courantes', '- Acupuncture, Phytothérapie', "- Analyses, Radiographies, Echographies", '- Gardes de nuits et week-end, Urgences'],
@@ -67,7 +67,7 @@ export default {
                     icones: ["/caduceevet.jpg"]
             }, expeTrois: {
                     title: "Clinique Vétérinaire du Marcadieu (Tarbes, 65)",
-                    paragraphes:['De janvier 2007 à juin 207 : ', '- Clientèle canine, consultations et chirurgies courantes', "- Analyses, Radiographies", '- Gardes de nuits et week-end, Urgences'],
+                    paragraphes:['2007 : ', '- Clientèle canine, consultations et chirurgies courantes', "- Analyses, Radiographies", '- Gardes de nuits et week-end, Urgences'],
                     icones: ["/caduceevet.jpg"]
             }, expeQuatre: {
                     title: "Clinique Vétérinaire de St-Hilaire de Riez (85)",

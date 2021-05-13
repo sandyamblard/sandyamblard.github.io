@@ -11,9 +11,14 @@
   background-color: $color-tertiary;
   padding: 1em;
   flex: 30%;
+  margin-top: -6px;
   @include tab-version {
     padding-right: 15%;
     padding-left: 15%;
+  }
+  @include desk-version {
+    //border-right: $color-secondary dotted 1px;
+    box-shadow: 0 0 6px lighten($color-secondary, 19%);
   }
   @media all and(min-width: $bkpt-big) {
     flex: 25%;

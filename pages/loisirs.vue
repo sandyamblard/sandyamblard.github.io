@@ -1,7 +1,7 @@
 <template>
     <main>
-        <section class='contenu'>
-            <div class='entete entete--loisirs'> <h1>Loisirs</h1></div>
+        <section class='contenu' aria-label='Expériences et formations'>
+            <div class='entete entete--loisirs'> <h1>Autres</h1></div>
             <a href="#sidebar"><triangle></triangle></a>
             <div class='contenu-item'>
                 <h2>Centre d'intérêts</h2>
@@ -24,7 +24,7 @@
                         <span>2003-2007 : <span class="bold">Déléguée de l'association HANDI-CHIENS</span></span> : éducation de chiens d'assistance pour personnes handicapées moteur : <br>
                         - Famille d'accueil pour 2 futurs chiens d'assistance de 2 à 20mois <br>
                         - Participation à un stage de passation<br>
-                        - Formation complémentaire de déléguée ed l'association
+                        - Formation complémentaire de déléguée de l'association
                     </li>
                 </ul>
             </div> 
@@ -58,7 +58,7 @@ export default {
     data(){
         return{
              pointsforts: ['Créativité', 'Adaptabilité', 'Polyvalence', 'Optimisation'], 
-            competences:['Photographie', 'Photoshop, Gimp', 'Bricolage', 'Travaux : conception, planification, réalisation, décoration',  "Architecture",  'Loisirs créatifs', "Décoration d'intérieur","Education canine, toutes races"]
+            competences:['Photographie', 'Photoshop, Gimp', 'Bricolage', 'Travaux : conception, planification, réalisation, décoration',  "Organisation et optimisation d'espaces", 'Do It Yourself, Upcycling' ,  'Loisirs créatifs', "Décoration d'intérieur","Education canine, toutes races", "Education de chiens d'assistance"]
         ,renovation:{   img:'/maison.jpg' ,
                     title: "Bricolage : rénovation d'une ferme", 
                     paragraphes: ['Depuis 2009 :',
@@ -69,13 +69,13 @@ export default {
                         "Aménagement sur mesure de 2 fourgons pour transports sécurisés des chiens et hébergement lors de déplacements", "- Création du mobilier, électricité, isolation", "- Optimisation de l'espace"],  
             },diy:{   img:'/diy.jpg' ,
                     title: "DIY : création et relooking d'objets et meubles", 
-                    paragraphes: ['- Création sur-mesure ou upcycling','- Peinture décorative', '- Participation des ateliers déco'],  
+                    paragraphes: ['- Création sur-mesure ou upcycling','- Peinture décorative', '- Participation à des ateliers déco'],  
             },photo:{   img:'/photo.jpg' ,
                     title: "Photographie", 
                     paragraphes: ['- Prises de vue', '- Edition avec photoshop ou Gimp', '- Création de montages'],  
             },randos:{   img:'/voyages.jpg' ,
                     title: "Randonnées et voyages", 
-                    paragraphes: ['- Randonnées en montagne (Alpes, Pyrénées), bivouacs', '- Voyages (France, Europe, USA) : ', 'Nombreux voyages en France', 'Road-Trip de 3 semaines en Ecosse en 2019', "5 jours chez l'habitant à Seattle (USA)"],  
+                    paragraphes: ['- Randonnées en montagne (Alpes, Pyrénées), bivouacs', '- Voyages (France, Europe, USA) : ', 'Nombreux voyages en France,', 'Road-Trip de 3 semaines en Ecosse en 2019,', "5 jours chez l'habitant à Seattle (USA)"],  
             },education:{   img:'/education.jpg' ,
                     title: "Education canine", 
                     paragraphes: ['- Education de base, méthode positive et bienveillante', "- Clicker training", "- Médical training", "- Education spécifique aux sports canins", "- Education spécifique pour chiens d'assistance"],  

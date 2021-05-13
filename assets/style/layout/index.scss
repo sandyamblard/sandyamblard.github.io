@@ -8,6 +8,7 @@
   background-size: cover;
   background-position-y: 55%;
   box-shadow: 2px 2px 5px grey;
+  border-bottom: black solid 3px;
   @include tab-version {
     height: 25vw;
     margin-left: 10%;
@@ -36,10 +37,15 @@
   }
   & p:nth-child(2) {
     text-transform: uppercase;
-    font-weight: 800;
+    font-weight: 600;
     font-size: 1.2em;
+    background-color: rgba(darken($color-secondary, 30%), 0.7);
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px $color-tertiary;
+    padding: 0.4em;
+    font-style: italic;
     @include desk-and-tab-version {
-      font-size: 1.5em;
+      font-size: 1.4em;
     }
   }
   & p:nth-child(3) {
@@ -103,5 +109,18 @@
   background-position-y: 75%;
   & p:last-child {
     border-radius: 0 0 10px 10px;
+  }
+}
+
+.intro {
+  margin-bottom: 2vw;
+}
+
+.intro a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+  &:hover {
+    text-decoration: underline;
   }
 }

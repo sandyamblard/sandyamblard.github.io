@@ -19,7 +19,7 @@
                 <ul class='formations'> 
                     <li class="form__item"><span>Décembre 2020 - Avril 2021 : <span class="bold">DEVELOPPEUR WEB, titre RNCP de niveau 5</span>, OpenClassRooms :</span><br>
                     Réalisation de 6 projets concrets, en Front-end, Back-end, SEO et Performances, Accessibilité<br>
-                    Titre en attente de validation par le jury<br>
+                    Titre RNCP en attente de validation par le jury<br>
                     <a href="https://github.com/sandyamblard">Voir sur GitHub</a>
                     
                     </li>

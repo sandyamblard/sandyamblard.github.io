@@ -10,8 +10,8 @@
         </ul>
         <div v-if='expe.icones'>
             <img v-for='(oneicone, index) in expe.icones' :key=index class='dev-icone' :src="oneicone" alt=''>
-        </div>
-        <a v-if='expe.lien' :href="expe.link">{{ expe.lien }}</a>
+        </div >
+        <a class='expe--link' v-if='expe.lien' :href="expe.link">{{ expe.lien }}</a>
     </div>
 </template>
 

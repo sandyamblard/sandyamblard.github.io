@@ -2,7 +2,7 @@
     <section class=sidebar aria-label="profil et compétences" id="sidebar">
         <div class="profil">
             <h2>Profil</h2>
-            <p> <strong>Développeur web</strong>, à la recherche d'un poste front-end ou full-stack. <br>
+            <p> <strong>Développeur web</strong>, je suis à la recherche d'un poste front-end ou full-stack. <br>
             Assidue, rigoureuse, appliquée, autonome, j'apprends vite et je pourrais rapidement m'intégrer à une équipe.<br>  
             Disponible immédiatement, CDI ou CDD. Télétravail et temps partiel possible.</p>
         </div>

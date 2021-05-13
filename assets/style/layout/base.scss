@@ -43,6 +43,7 @@ h1 {
 .contenu-item {
   margin-right: 1em;
   margin-left: 1em;
+  margin-bottom: 3vw;
   @media all and(min-width: $bkpt-big) {
     margin-right: 7.5vw;
     margin-left: 7.5vw;

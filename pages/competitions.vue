@@ -1,6 +1,6 @@
 <template>
     <main>
-        <section class='contenu'>
+        <section class='contenu' aria-label='Expériences et formations'>
             <div class='entete entete--competition'> <h1>Compétitrice</h1></div>
             <a href="#sidebar"><triangle></triangle></a>
             <div class='contenu-item'>
@@ -50,9 +50,9 @@ export default {
     data(){
         return{
              pointsforts: ['Ténacité', 'Rigueur', 'Méthodologie, organisation', 'Persévérance', 'Dépassement de soi', "Esprit d'équipe", 'Sens du travail', 'Goût pour le challenge', 'Créativité'], 
-            competences:['Gestion des émotions', "Optimisation de l'entrainement", 'Clicker-training', 'Agility', 'Troupeau', 'Dogdancing', 'CaniVTT', 'Escalade', "Gymnastique", 'Sports-études', 'Endurance']
+            competences:['Gestion des émotions', "Optimisation de l'entrainement", 'Clicker-training', 'Agility', 'Troupeau', 'Dogdancing', 'CaniVTT', 'Cavage', 'Escalade', "Gymnastique", 'Sports-études', 'Endurance']
         ,sportscanins:{   img:'/sportscanins.jpg' ,
-                    title: "Sports canins : agility (grade 3), dogdancing (catégorie avancé), caniVTT", 
+                    title: "Sports canins : agility (grade 3), dogdancing (catégorie avancé), caniVTT, cavage", 
                     paragraphes: ['Depuis 2008 :',
                         '- Nombreux concours avec plusieurs chiens (8)', '- Niveau local, régional, national et international'],
                     perfs:['Equipe de France de Dogdancing 2019', 'Participation aux championnats du monde de Dogdancing 2019 en HTM et Freestyle, classée 15ème en HTM', "Championne régionale d'agility", "3 fois Vice-Championne régionale d'agility", "Vainqueur de la coupe régionale d'agility", "Plusieurs sélections pour le Grand Prix de France en agility, Dogdancing et CaniVTT", "Sélections pour le championnat de France d'agility", "Vainqueur du Grand Prix de France de Dogdancing, catégorie HTM novice", "2ème Grand Prix de France de Dogdancing, catégorie HTM intermédiaire", "2ème Grand Prix de France de Dogdancing, catégorie HTM avancé", "2ème Grand Prix de France de Dogdancing, catégorie Freestyle intermédiaire", "4ème au classement annuel du challenge régional du caniVTT, catégorie Senior Femme", "Nombreux podiums en concours locaux"],  

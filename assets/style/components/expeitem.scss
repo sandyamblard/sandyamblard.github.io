@@ -65,6 +65,18 @@
   margin-top: 0.4em;
 }
 
+.expe--link::before {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: black 7px solid;
+  border-top: transparent 7px solid;
+  border-bottom: transparent 7px solid;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
 .expe--perfs {
   padding-left: 0;
   & li {
