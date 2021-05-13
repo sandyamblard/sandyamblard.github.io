@@ -1,10 +1,12 @@
-.triangle a {
+.triangle--text {
   background-color: $color-secondary;
   box-shadow: 2px 2px 5px grey;
   color: white;
   text-decoration: none;
   display: block;
   width: 70vw;
+  margin-top: 2.5vw;
+  margin-bottom: 2.5vw;
   @include tab-version {
     width: 40vw;
   }

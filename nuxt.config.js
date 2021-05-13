@@ -11,7 +11,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { name: 'description', content: 'Site CV sandy Amblard construit avec nuxt pour tester !' }
+      { name: 'description', content: 'CV Sandy Amblard, développeur web Vue.JS, NuxtJS, mais aussi docteur vétérinaire, éleveur canin' }
     ],
     link: [
       { rel: 'icon', type: 'image/png', href: '/favicone.png' },

@@ -568,16 +568,12 @@ h1 {
   padding: 1em;
   flex: 30%;
   margin-top: -6px;
+  box-shadow: 0 0 6px #e4536b;
 }
 @media all and (min-width: 767px) and (max-width: 1023px) {
   .sidebar {
     padding-right: 15%;
     padding-left: 15%;
-  }
-}
-@media all and (min-width: 1023px) {
-  .sidebar {
-    box-shadow: 0 0 6px #e4536b;
   }
 }
 @media all and (min-width: 1400px) {
@@ -810,20 +806,22 @@ h1 {
   object-position: center 45%;
 }
 
-.triangle a {
+.triangle--text {
   background-color: #b91d37;
   box-shadow: 2px 2px 5px grey;
   color: white;
   text-decoration: none;
   display: block;
   width: 70vw;
+  margin-top: 2.5vw;
+  margin-bottom: 2.5vw;
   padding: 0.5em;
   margin-bottom: 0;
   cursor: pointer;
   text-align: center;
 }
 @media all and (min-width: 767px) and (max-width: 1023px) {
-  .triangle a {
+  .triangle--text {
     width: 40vw;
   }
 }

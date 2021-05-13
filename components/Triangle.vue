@@ -1,8 +1,8 @@
 <template>
     <div class='triangle'>
-        <a href='#sidebar'>
+        <div class='triangle--text'>
         Voir profil et compétences
-        </a>
+        </div>
     </div>
     
     
