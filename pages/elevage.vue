@@ -2,6 +2,7 @@
     <main>
         <section class='contenu'>
             <div class='entete entete--elevage'> <h1>Eleveuse professionnelle</h1></div>
+            <a href="#sidebar"><triangle></triangle></a>
             <div class='contenu-item'>
                 <h2>Expériences</h2>
                 <div class='expe__list expe--elevage'>
@@ -40,11 +41,13 @@
 <script>
 import Sidebar from '../components/Sidebar.vue';
 import Expeitem from '../components/Expeitem.vue';
+import Triangle from '../components/Triangle.vue';
 
 export default {
      components: {
     'sidebar': Sidebar,
-    'expeitem': Expeitem
+    'expeitem': Expeitem,
+    'triangle' : Triangle
     },
     data(){
         return{
@@ -52,7 +55,7 @@ export default {
             competences:['Connaissances zootechniques', 'Etudes de lignées', 'Génétique et sélection', "Planification", 'Bien-être animal', "Socialisation poussée", "Observation et détection des caractères","Construction d'habitats adaptés",'Communication (internet et réseaux)', 'Création de logo',  'Relation client', 'Gestion des urgences']
         ,chiens:{   img:'/chiots.jpg' ,
                     title: "Elevage canin professionnel des Cimes de Pyrène", 
-                    paragraphes: ['Depuis 2005 : ', '- Elevage, sélection et utilisation de bergers australiens ','- Membre du club de race international (ASCA)', "- Saillies à l'international, import de semence et inséminations congelées", "- Import et export de chiens à l'étranger", "- Utilisation de lignées travail", "- Eveil, socialisation, pré-éducation des chiots", "- Plusieurs chiots placés en Ecole de chiens guides",  "- Détection des familles adaptées", "- Rédaction livre informatif pour les adoptants", "- Construction lieux de vie et matériel", '- Concours dans plusieurs disciplines', '- Création de logo et site internet et blogs'],
+                    paragraphes: ['Depuis 2005 : ', '- Elevage, sélection et utilisation de bergers australiens ','- Membre du club de race international (ASCA)', "- Saillies à l'international, import de semence et inséminations congelées", "- Import et export de chiens à l'étranger", "- Utilisation de lignées travail", "- Eveil, socialisation, pré-éducation des chiots", "- Plusieurs chiots placés en Ecole de chiens guides",  "- Détection des familles adaptées", "- Rédaction livre informatif pour les adoptants", "- Construction lieux de vie et matériel", '- Concours dans plusieurs disciplines', '- Création de logo et site internet et blogs, travail sur expérience utilisateur'],
                     icones: ['/cdp.jpg'],
                         // lien: 'Voir le GitHub du projet', link: 'https://github.com/sandyamblard/sandyamblard-2-21122020'
         }, brebis:{   img:'/brebis.jpg' ,

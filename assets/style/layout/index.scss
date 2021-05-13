@@ -18,7 +18,8 @@
     width: 75%;
     height: 25vw;
   }
-  &:hover {
+  &:hover,
+  &:focus {
     transform: scale(1.03);
     box-shadow: 2px 2px 15px grey;
     transition: 0.3s;
@@ -71,13 +72,16 @@
   background-image: url("/vet.jpg");
   @media all and(min-width: $bkpt-big) {
     height: 14vw;
+    background-position-y: 35%;
   }
 }
 
 .bann--compet {
-  background-image: url("/bannloisirs(3).jpg");
+  background-image: url("/banncompet.jpg");
+  background-position-y: 19%;
   @media all and(min-width: $bkpt-big) {
     height: 14vw;
+    background-position-y: 10%;
   }
 }
 

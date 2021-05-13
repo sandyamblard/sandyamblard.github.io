@@ -27,6 +27,9 @@
     content: "";
     display: block;
     width: 12em;
+    @media all and (max-width: $bkpt-minimob) {
+      width: 9em;
+    }
     height: 0.15em;
     background: linear-gradient(
       to right,
@@ -42,10 +45,16 @@
 }
 .entete--veto {
   background-image: url("/vet.jpg");
+  background-position: center 27%;
 }
 .entete--elevage {
   background-image: url("/bannchiots.jpg");
-  opacity: 0.9;
+  //opacity: 0.9;
+}
+
+.entete--competition {
+  background-image: url("/banncompet.jpg");
+  background-position: center 6%;
 }
 .entete--loisirs {
   background-image: url("/bannloisirs.jpg");

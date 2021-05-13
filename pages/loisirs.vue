@@ -2,6 +2,7 @@
     <main>
         <section class='contenu'>
             <div class='entete entete--loisirs'> <h1>Loisirs</h1></div>
+            <a href="#sidebar"><triangle></triangle></a>
             <div class='contenu-item'>
                 <h2>Centre d'intérêts</h2>
                 <div class='expe__list'>
@@ -47,16 +48,17 @@
 <script>
 import Sidebar from '../components/Sidebar.vue';
 import Expeitem from '../components/Expeitem.vue';
+import Triangle from '../components/Triangle.vue';
 
 export default {
      components: {
     'sidebar': Sidebar,
-    'expeitem': Expeitem
+    'expeitem': Expeitem, 'triangle' : Triangle
     },
     data(){
         return{
              pointsforts: ['Créativité', 'Adaptabilité', 'Polyvalence', 'Optimisation'], 
-            competences:['Photographie', 'Photoshop, Gimp', 'Bricolage', 'Travaux : de la conception à la décoration', "Travaux : Planification",  "Architecture",  'Loisirs créatifs', "Décoration d'intérieur","Education canine, comportement canin"]
+            competences:['Photographie', 'Photoshop, Gimp', 'Bricolage', 'Travaux : conception, planification, réalisation, décoration',  "Architecture",  'Loisirs créatifs', "Décoration d'intérieur","Education canine, toutes races"]
         ,renovation:{   img:'/maison.jpg' ,
                     title: "Bricolage : rénovation d'une ferme", 
                     paragraphes: ['Depuis 2009 :',
@@ -73,7 +75,7 @@ export default {
                     paragraphes: ['- Prises de vue', '- Edition avec photoshop ou Gimp', '- Création de montages'],  
             },randos:{   img:'/voyages.jpg' ,
                     title: "Randonnées et voyages", 
-                    paragraphes: ['- Randonnées en montagne, bivouac', '- Voyages, 3 semaines en Ecosse en 2019'],  
+                    paragraphes: ['- Randonnées en montagne (Alpes, Pyrénées), bivouacs', '- Voyages (France, Europe, USA) : ', 'Nombreux voyages en France', 'Road-Trip de 3 semaines en Ecosse en 2019', "5 jours chez l'habitant à Seattle (USA)"],  
             },education:{   img:'/education.jpg' ,
                     title: "Education canine", 
                     paragraphes: ['- Education de base, méthode positive et bienveillante', "- Clicker training", "- Médical training", "- Education spécifique aux sports canins", "- Education spécifique pour chiens d'assistance"],  

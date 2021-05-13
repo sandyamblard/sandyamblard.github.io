@@ -3,6 +3,7 @@
 <section class='contenu'>
             <div class='entete entete--veto'> <h1>Docteur Vétérinaire</h1></div>
             <p class="subtitle">- LYON 2005, 12 ans de pratique -</p>
+            <a href="#sidebar"><triangle></triangle></a>
             <div class="contenu-item">
                 <h2>Expériences professionnelles</h2>
                 <div class='expe__list'>
@@ -49,6 +50,7 @@
 <script>
 import Sidebar from '../components/Sidebar.vue';
 import Expeitem from '../components/Expeitem.vue';
+import Triangle from '../components/Triangle.vue';
 
 export default {
     data(){
@@ -76,7 +78,8 @@ export default {
     },
   components: {
     'sidebar': Sidebar, 
-    'expeitem': Expeitem
+    'expeitem': Expeitem, 
+    'triangle' : Triangle
     }
 }
 </script>

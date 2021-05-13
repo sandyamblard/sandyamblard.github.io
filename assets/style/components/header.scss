@@ -23,6 +23,10 @@
     position: fixed;
     top: 0;
   }
+  @media all and(min-width: $bkpt-big) {
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
   & a {
     text-decoration: none;
     color: inherit;

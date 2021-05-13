@@ -1,0 +1,54 @@
+.triangle a {
+  background-color: $color-secondary;
+  box-shadow: 2px 2px 5px grey;
+  color: white;
+  text-decoration: none;
+  display: block;
+  width: 70vw;
+  @include tab-version {
+    width: 40vw;
+  }
+  padding: 0.5em;
+  margin-bottom: 0;
+  cursor: pointer;
+  text-align: center;
+}
+
+.triangle {
+  margin-left: 15vw;
+  @include tab-version {
+    margin-left: 30vw;
+  }
+  margin-top: 4.5vw;
+  margin-bottom: 4.5vw;
+  @include desk-version {
+    display: none;
+  }
+}
+.triangle-index {
+  margin-left: calc(15vw - 1em);
+  @include tab-version {
+    margin-left: calc(30vw - 1em);
+  }
+}
+
+.triangle::after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 0px;
+  margin-top: 0;
+  border-top: $color-secondary 5vw solid;
+  border-left: transparent 35vw solid;
+  border-right: transparent 35vw solid;
+  cursor: pointer;
+  @include tab-version {
+    border-top: $color-secondary 3vw solid;
+    border-left: transparent 20vw solid;
+    border-right: transparent 20vw solid;
+  }
+}
+
+.contenu a {
+  text-decoration: none;
+}

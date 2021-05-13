@@ -2,7 +2,7 @@
     <main>
         <section class='contenu'>
             <div class='entete entete--code'> <h1>Développeur web</h1></div>
-            
+            <a href="#sidebar"><triangle></triangle></a>
             <div class='contenu-item'>
                 <h2>Réalisations</h2>
                 <div class='expe__list'>
@@ -45,11 +45,12 @@
 <script>
 import Sidebar from '../components/Sidebar.vue';
 import Expeitem from '../components/Expeitem.vue';
+import Triangle from '../components/Triangle.vue';
 
 export default {
     data(){
         return{
-            pointsforts: ['Rigueur', 'Concentration', 'Méthodologie', 'Autonomie', 'Tenacité', 'Goût pour le challenge'], 
+            pointsforts: ['Rigueur', 'Concentration', 'Méthodologie', 'Autonomie', 'Tenacité', 'Goût pour le challenge', 'Perfectionnisme'], 
             competences:['Visual Studio Code', 'Git et GitHub', 'HTML5 et CSS3', 'Javascript', 'Vue.JS, Nuxt.JS', 'Node.JS', 'MongoDB', 'MySQL', 'Sequelize', 'Responsive design']
             , projetUn:{ img:'/reservia.jpg' ,
                         title: "Maquette du site de Reservia", 
@@ -83,7 +84,8 @@ export default {
     },
   components: {
     'sidebar': Sidebar,
-    'expeitem': Expeitem
+    'expeitem': Expeitem, 
+    'triangle' : Triangle
     }
 }
 </script>

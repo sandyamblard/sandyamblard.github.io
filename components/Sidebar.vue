@@ -1,5 +1,5 @@
 <template>
-    <section class=sidebar aria-label="profil et compétences">
+    <section class=sidebar aria-label="profil et compétences" id="sidebar">
         <div class="profil">
             <h2>Profil</h2>
             <p> <strong>Développeur web</strong>, à la recherche d'un poste front-end ou full-stack. <br>
@@ -31,10 +31,12 @@
         </NuxtLink>
         <NuxtLink to='/veto'>
             <ul>
-                <li><i class="fas fa-stethoscope"></i>Médecine et chirurgie vétérinaire<li>
+                <li><i class="fas fa-stethoscope"></i>Médecine vétérinaire<li>
+                <li><i class="fas fa-stethoscope"></i>Chirurgie vétérinaire<li>
                 <li><i class="fas fa-stethoscope"></i>Acupuncture, Phytothérapie</li>
                 <li><i class="fas fa-stethoscope"></i>Analyses</li>
                 <li><i class="fas fa-stethoscope"></i>Radiographie, Echographie</li>
+                <li><i class="fas fa-stethoscope"></i>Comportement canin et félin</li>
             </ul>
         </NuxtLink>
         <NuxtLink to='/elevage'>

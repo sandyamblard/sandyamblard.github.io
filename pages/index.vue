@@ -4,6 +4,7 @@
       <h1>Bienvenue sur mon CV en ligne !</h1>
       <p>De développeur Web à Docteur vétérinaire, en passant par éleveur et compétitrice, venez découvrir mes différentes expériences et champs de compétences au travers de ce site web. </p>
       <p>Bonne visite ! </p>
+      <a href="#sidebar"><triangle class='triangle-index'></triangle></a>
        <div class='index-links'>     
           <NuxtLink to='/webdev' class='bann bann--dev'>
             <div class='bann-caption'>
@@ -50,10 +51,11 @@
 
 <script>
 import Sidebar from '../components/Sidebar.vue';
+import Triangle from '../components/Triangle.vue';
 
 export default {
   components: {
-    'sidebar': Sidebar
+    'sidebar': Sidebar, 'triangle' : Triangle
     }
 }
 </script>
