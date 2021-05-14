@@ -19,7 +19,7 @@
                     <li class="form__item"><span>Septembre 2005 - Octobre 2006 : <span class="bold">THESE DE DOCTORAT</span>, ENVL + Faculté de médecine de Lyon :</span><br>
                         T1 pro : projet personnel spécialisé en médecines alternatives,<br>
                         Thèse : Traitement de l'arthrose par les médecines alternatives chez le chien, <br> Mention Très Honorable<br>
-                        <a href="">Voir la thèse</a>
+                        <!--a href="">Voir la thèse</a-->
                     </li>
                     <li class="form__item"><span>Septembre 2001 - Juin 2005 : <span class="bold">DIPLOME d'ETUDES FONDAMENTALES VETERINAIRES</span>, Ecole Nationale Vétérinaire de Lyon</span><br>
                     </li>

@@ -90,6 +90,7 @@
   box-shadow: 3px 3px 8px $color-secondary;
   padding-left: 0.5em;
   padding-right: 0.5em;
+  text-align: justify;
   @include desk-version {
     margin: 0.5em;
   }

@@ -118,6 +118,11 @@ h1 {
     font-size: 1.4em;
   }
 }
+@media all and (max-width: 767px) {
+  .bann p:nth-child(2) {
+    margin-bottom: 0;
+  }
+}
 .bann p:nth-child(3) {
   width: 100%;
   padding-top: 0.5em;
@@ -134,9 +139,14 @@ h1 {
 }
 
 .bann--dev {
-  background-image: url("/code.jpg");
+  background-image: url("/code-mob.jpg");
   height: 68vw;
   border-radius: 10px 10px 0 0;
+}
+@media all and (min-width: 767px) {
+  .bann--dev {
+    background-image: url("/code.jpg");
+  }
 }
 @media all and (min-width: 767px) and (max-width: 1023px) {
   .bann--dev {
@@ -150,7 +160,17 @@ h1 {
 }
 
 .bann--veto {
-  background-image: url("/vet.jpg");
+  background-image: url("/vet-mob.jpg");
+}
+@media all and (min-width: 767px) and (max-width: 1023px) {
+  .bann--veto {
+    background-image: url("/vet-tab.jpg");
+  }
+}
+@media all and (min-width: 1023px) {
+  .bann--veto {
+    background-image: url("/vet.jpg");
+  }
 }
 @media all and (min-width: 1400px) {
   .bann--veto {
@@ -160,8 +180,18 @@ h1 {
 }
 
 .bann--compet {
-  background-image: url("/banncompet.jpg");
+  background-image: url("/banncompet-mob.jpg");
   background-position-y: 19%;
+}
+@media all and (min-width: 767px) and (max-width: 1023px) {
+  .bann--compet {
+    background-image: url("/banncompet-tab.jpg");
+  }
+}
+@media all and (min-width: 1023px) {
+  .bann--compet {
+    background-image: url("/banncompet.jpg");
+  }
 }
 @media all and (min-width: 1400px) {
   .bann--compet {
@@ -171,8 +201,18 @@ h1 {
 }
 
 .bann--elevage {
-  background-image: url("/bannchiots.jpg");
+  background-image: url("/bannchiots-mob.jpg");
   background-position-y: 50%;
+}
+@media all and (min-width: 767px) and (max-width: 1023px) {
+  .bann--elevage {
+    background-image: url("/bannchiots-tab.jpg");
+  }
+}
+@media all and (min-width: 1023px) {
+  .bann--elevage {
+    background-image: url("/bannchiots.jpg");
+  }
 }
 @media all and (min-width: 1400px) {
   .bann--elevage {
@@ -181,9 +221,19 @@ h1 {
 }
 
 .bann--loisirs {
-  background-image: url("/bannloisirs.jpg");
+  background-image: url("/bannloisirs-mob.jpg");
   border-radius: 0 0 10px 10px;
   background-position-y: 75%;
+}
+@media all and (min-width: 767px) and (max-width: 1023px) {
+  .bann--loisirs {
+    background-image: url("/bannloisirs-tab.jpg");
+  }
+}
+@media all and (min-width: 1023px) {
+  .bann--loisirs {
+    background-image: url("/bannloisirs.jpg");
+  }
 }
 @media all and (min-width: 1400px) {
   .bann--loisirs {
@@ -196,6 +246,7 @@ h1 {
 
 .intro {
   margin-bottom: 2vw;
+  text-align: justify;
 }
 
 .intro a {
@@ -247,26 +298,71 @@ h1 {
 }
 
 .entete--code {
-  background-image: url("/code.jpg");
+  background-image: url("/code-mob.jpg");
+}
+@media all and (min-width: 767px) {
+  .entete--code {
+    background-image: url("/code.jpg");
+  }
 }
 
 .entete--veto {
-  background-image: url("/vet.jpg");
+  background-image: url("/vet-mob.jpg");
   background-position: center 27%;
+}
+@media all and (min-width: 767px) and (max-width: 1023px) {
+  .entete--veto {
+    background-image: url("/vet-tab.jpg");
+  }
+}
+@media all and (min-width: 1023px) {
+  .entete--veto {
+    background-image: url("/vet.jpg");
+  }
 }
 
 .entete--elevage {
-  background-image: url("/bannchiots.jpg");
+  background-image: url("/bannchiots-mob.jpg");
+}
+@media all and (min-width: 767px) and (max-width: 1023px) {
+  .entete--elevage {
+    background-image: url("/bannchiots-tab.jpg");
+  }
+}
+@media all and (min-width: 1023px) {
+  .entete--elevage {
+    background-image: url("/bannchiots.jpg");
+  }
 }
 
 .entete--competition {
-  background-image: url("/banncompet.jpg");
+  background-image: url("/banncompet-mob.jpg");
   background-position: center 6%;
+}
+@media all and (min-width: 767px) and (max-width: 1023px) {
+  .entete--competition {
+    background-image: url("/banncompet-tab.jpg");
+  }
+}
+@media all and (min-width: 1023px) {
+  .entete--competition {
+    background-image: url("/banncompet.jpg");
+  }
 }
 
 .entete--loisirs {
-  background-image: url("/bannloisirs.jpg");
+  background-image: url("/bannloisirs-mob.jpg");
   background-position: center 57%;
+}
+@media all and (min-width: 767px) and (max-width: 1023px) {
+  .entete--loisirs {
+    background-image: url("/bannloisirs-tab.jpg");
+  }
+}
+@media all and (min-width: 1023px) {
+  .entete--loisirs {
+    background-image: url("/bannloisirs.jpg");
+  }
 }
 
 .subtitle {
@@ -463,14 +559,25 @@ h1 {
   margin-top: 0.4em;
   margin-bottom: 0.1em;
 }
-.nav p:hover {
-  border-bottom: 3px solid #363636;
-  transition: all 0.3s;
+@media all and (min-width: 767px) {
+  .nav p:hover {
+    border-bottom: 3px solid #363636;
+    transition: all 0.3s;
+  }
 }
 @media all and (min-width: 1023px) {
   .nav {
     display: flex;
   }
+}
+
+@media all and (min-width: 767px) {
+  .nav .nuxt-link-active {
+    border-bottom: 3px solid #363636;
+  }
+}
+.nav .nuxt-link-active:hover {
+  border-color: transparent;
 }
 
 .fa-times {
@@ -484,15 +591,26 @@ h1 {
   top: 11vw;
 }
 
-.menuappear {
-  animation: appearmenu 0.4s ease-in-out both;
-}
-
-.nav .nuxt-link-active {
-  border-bottom: 3px solid #363636;
-}
-.nav .nuxt-link-active:hover {
-  border-color: transparent;
+@media all and (max-width: 767px) {
+  .nav {
+    animation: appearmenu 0.4s ease-in-out both;
+  }
+  .nav a {
+    background-color: #dbefc4;
+    border-radius: 5px;
+    margin: 0;
+    margin-bottom: 6px;
+    padding: 0.5em;
+    box-shadow: 2px 2px 6px grey;
+  }
+  .nav a:first-child {
+    margin-top: 1.6em;
+  }
+  .nav .nuxt-link-active {
+    background-color: #91ce4c;
+    box-shadow: 2px 2px 8px #3a3a3a;
+    transform: scaleX(1.05);
+  }
 }
 
 @keyframes appearmenu {
@@ -514,9 +632,6 @@ h1 {
 @keyframes expand {
   0% {
     height: 35vw;
-  }
-  50% {
-    height: 60vw;
   }
   100% {
     height: auto;
@@ -660,6 +775,7 @@ h1 {
   box-shadow: 3px 3px 8px #b91d37;
   padding-left: 0.5em;
   padding-right: 0.5em;
+  text-align: justify;
 }
 @media all and (min-width: 1023px) {
   .profil {

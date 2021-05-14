@@ -42,26 +42,53 @@
 }
 
 .entete--code {
-  background-image: url("/code.jpg");
+  background-image: url("/code-mob.jpg");
+  @include desk-and-tab-version {
+    background-image: url("/code.jpg");
+  }
 }
 .entete--veto {
-  background-image: url("/vet.jpg");
+  background-image: url("/vet-mob.jpg");
   background-position: center 27%;
+  @include tab-version {
+    background-image: url("/vet-tab.jpg");
+  }
+  @include desk-version {
+    background-image: url("/vet.jpg");
+  }
 }
 .entete--elevage {
-  background-image: url("/bannchiots.jpg");
+  background-image: url("/bannchiots-mob.jpg");
   //opacity: 0.9;
+  @include tab-version {
+    background-image: url("/bannchiots-tab.jpg");
+  }
+  @include desk-version {
+    background-image: url("/bannchiots.jpg");
+  }
 }
 
 .entete--competition {
-  background-image: url("/banncompet.jpg");
+  background-image: url("/banncompet-mob.jpg");
   background-position: center 6%;
-}
-.entete--loisirs {
-  background-image: url("/bannloisirs.jpg");
-  background-position: center 57%;
+  @include tab-version {
+    background-image: url("/banncompet-tab.jpg");
+  }
+  @include desk-version {
+    background-image: url("/banncompet.jpg");
+  }
 }
 
+.entete--loisirs {
+  background-image: url("/bannloisirs-mob.jpg");
+  background-position: center 57%;
+  @include tab-version {
+    background-image: url("/bannloisirs-tab.jpg");
+  }
+  @include desk-version {
+    background-image: url("/bannloisirs.jpg");
+  }
+}
 .subtitle {
   color: darken($color-primary, 50%);
   text-align: center;

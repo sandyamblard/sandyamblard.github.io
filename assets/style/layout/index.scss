@@ -47,6 +47,9 @@
     @include desk-and-tab-version {
       font-size: 1.4em;
     }
+    @media all and(max-width: $bkpt-mob) {
+      margin-bottom: 0;
+    }
   }
   & p:nth-child(3) {
     width: 100%;
@@ -63,9 +66,12 @@
 }
 
 .bann--dev {
-  background-image: url("/code.jpg");
+  background-image: url("/code-mob.jpg");
   height: 68vw;
   border-radius: 10px 10px 0 0;
+  @include desk-and-tab-version {
+    background-image: url("/code.jpg");
+  }
   @include tab-version {
     height: 32vw;
   }
@@ -75,7 +81,13 @@
 }
 
 .bann--veto {
-  background-image: url("/vet.jpg");
+  background-image: url("/vet-mob.jpg");
+  @include tab-version {
+    background-image: url("/vet-tab.jpg");
+  }
+  @include desk-version {
+    background-image: url("/vet.jpg");
+  }
   @media all and(min-width: $bkpt-big) {
     height: 14vw;
     background-position-y: 35%;
@@ -83,8 +95,14 @@
 }
 
 .bann--compet {
-  background-image: url("/banncompet.jpg");
+  background-image: url("/banncompet-mob.jpg");
   background-position-y: 19%;
+  @include tab-version {
+    background-image: url("/banncompet-tab.jpg");
+  }
+  @include desk-version {
+    background-image: url("/banncompet.jpg");
+  }
   @media all and(min-width: $bkpt-big) {
     height: 14vw;
     background-position-y: 10%;
@@ -92,7 +110,13 @@
 }
 
 .bann--elevage {
-  background-image: url("/bannchiots.jpg");
+  background-image: url("/bannchiots-mob.jpg");
+  @include tab-version {
+    background-image: url("/bannchiots-tab.jpg");
+  }
+  @include desk-version {
+    background-image: url("/bannchiots.jpg");
+  }
   @media all and(min-width: $bkpt-big) {
     height: 14vw;
   }
@@ -100,8 +124,13 @@
 }
 
 .bann--loisirs {
-  background-image: url("/bannloisirs.jpg");
-
+  background-image: url("/bannloisirs-mob.jpg");
+  @include tab-version {
+    background-image: url("/bannloisirs-tab.jpg");
+  }
+  @include desk-version {
+    background-image: url("/bannloisirs.jpg");
+  }
   @media all and(min-width: $bkpt-big) {
     height: 14vw;
   }
@@ -114,6 +143,7 @@
 
 .intro {
   margin-bottom: 2vw;
+  text-align: justify;
 }
 
 .intro a {
