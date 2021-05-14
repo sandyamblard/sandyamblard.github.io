@@ -857,6 +857,7 @@ h1 {
   object-fit: cover;
   object-position: center 10%;
   height: 35vw;
+  cursor: pointer;
 }
 @media all and (min-width: 767px) and (max-width: 1023px) {
   .expe--img {

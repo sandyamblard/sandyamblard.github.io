@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/veto", {data:[{}],fetch:{},mutations:void 0});

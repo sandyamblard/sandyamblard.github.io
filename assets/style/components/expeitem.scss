@@ -50,6 +50,7 @@
     object-fit: cover;
     object-position: center 10%;
     height: 35vw;
+    cursor: pointer;
     @include tab-version {
       height: 18vw;
     }
