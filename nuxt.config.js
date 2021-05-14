@@ -1,3 +1,7 @@
+import mitt from 'mitt'
+
+export const emitter = mitt();
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -11,12 +15,12 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { name: 'description', content: 'CV Sandy Amblard, développeur web Vue.JS, NuxtJS, mais aussi docteur vétérinaire, éleveur canin' }
+      { name: 'description', content: 'CV Sandy Amblard, développeur web Vue.JS, NuxtJS, mais aussi docteur vétérinaire, éleveur canin. En recherche poste, télétravail possible, temps partiel possible' }
     ],
     link: [
       { rel: 'icon', type: 'image/png', href: '/favicone.png' },
       { rel:"preconnect", href:"https://fonts.gstatic.com"},
-      { rel: "stylesheet", href:"https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;800&family=Train+One&display=swap?family=Poppins:wght@200;400;600;800&display=swap&family=Merienda+One" }
+      { rel: "stylesheet", href:"https://fonts.googleapis.com/css2?&display=swap?family=Poppins:wght@200;400;600;800&display=swap&family=Merienda+One" }
     ],
     script: [ 
       {src:"https://kit.fontawesome.com/32f1ce6b66.js", crossorigin: "anonymous"}

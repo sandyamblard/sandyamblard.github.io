@@ -62,7 +62,7 @@ export default {
         ,renovation:{   img:'/maison.jpg' ,
                     title: "Bricolage : rénovation d'une ferme", 
                     paragraphes: ['Depuis 2009 :',
-                        '- Rénovation habitation (second-oeuvre, décoration, de la conception à la réalisation', '- Habitats pour élevage : conception, création, gros-oeuvre, second-oeuvre', "- Constructions et aménagement de dépendances", "Travaux extérieurs (jardin, clôtures...)", "- Construction de meubles sur-mesure"],  
+                        '- Rénovation habitation (second-oeuvre, décoration, de la conception à la réalisation', '- Habitats pour élevage : conception, création, gros-oeuvre, second-oeuvre', "- Constructions et aménagement de dépendances", "- Travaux extérieurs (jardin, clôtures...)", "- Construction de meubles sur-mesure"],  
             },fourgon:{   img:'/fourgon.jpg' ,
                     title: "Bricolage : aménagement de fourgons (type camping-car)", 
                     paragraphes: ['2010 et 2018  :',
@@ -78,7 +78,7 @@ export default {
                     paragraphes: ['- Randonnées en montagne (Alpes, Pyrénées), bivouacs', '- Voyages (France, Europe, USA) : ', 'Nombreux voyages en France,', 'Road-Trip de 3 semaines en Ecosse en 2019,', "5 jours chez l'habitant à Seattle (USA)"],  
             },education:{   img:'/education.jpg' ,
                     title: "Education canine", 
-                    paragraphes: ['- Education de base, méthode positive et bienveillante', "- Clicker training", "- Médical training", "- Education spécifique aux sports canins", "- Education spécifique pour chiens d'assistance"],  
+                    paragraphes: ['- Education de base, méthode positive et bienveillante', '- Toutes races', "- Education de 10 chiens, de 4 races différentes, dont chiens d'assistance et chiens de concours ", '- Grandes connaissances en comportement canin', "- Clicker training", "- Médical training", "- Education spécifique aux sports canins", "- Education spécifique pour chiens d'assistance"],  
             },
         }
     }

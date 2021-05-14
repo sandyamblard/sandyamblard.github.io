@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
@@ -105,7 +109,7 @@ h1 {
   font-size: 1.2em;
   background-color: rgba(53, 8, 16, 0.7);
   border-radius: 10px;
-  box-shadow: 3px 3px 10px #ffedf4;
+  box-shadow: 3px 3px 8px #ffedf4;
   padding: 0.4em;
   font-style: italic;
 }
@@ -207,7 +211,7 @@ h1 {
   background-position: center;
   background-size: cover;
   width: 100%;
-  height: 12em;
+  height: 10em;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -295,7 +299,7 @@ h1 {
   z-index: 10;
   margin-top: 0;
   background-color: #c2e49c;
-  height: 35vw;
+  height: auto;
   width: 100%;
   box-shadow: 0 0 8px grey;
   padding: 1em;
@@ -326,6 +330,12 @@ h1 {
     padding-right: 2vw;
   }
 }
+@media all and (max-width: 767px) {
+  .topbar {
+    padding-top: 0em;
+    padding-bottom: 0em;
+  }
+}
 .topbar a {
   text-decoration: none;
   color: inherit;
@@ -347,12 +357,12 @@ h1 {
   }
 }
 .topbar img {
-  max-height: 30vw;
+  max-height: 23vw;
   width: auto;
   border-radius: 50%;
   box-shadow: 1px 1px 5px grey;
   border: ridge 2px #c2e49c;
-  margin-top: 1em;
+  margin-top: 0.5em;
 }
 @media all and (min-width: 767px) and (max-width: 1023px) {
   .topbar img {
@@ -363,6 +373,7 @@ h1 {
 @media all and (min-width: 1023px) {
   .topbar img {
     max-height: 80px;
+    margin-top: 1em;
   }
 }
 .topbar img:hover {
@@ -374,11 +385,16 @@ h1 {
   display: flex;
   align-items: center;
   margin: 0;
-  margin-bottom: 1.2em;
+  margin-bottom: 0.5em;
 }
 @media all and (min-width: 767px) and (max-width: 1023px) {
   .logo {
     margin-bottom: 0.6em;
+  }
+}
+@media all and (min-width: 1023px) {
+  .logo {
+    margin-bottom: 1.2em;
   }
 }
 .logo p {
@@ -813,8 +829,6 @@ h1 {
   text-decoration: none;
   display: block;
   width: 70vw;
-  margin-top: 2.5vw;
-  margin-bottom: 2.5vw;
   padding: 0.5em;
   margin-bottom: 0;
   cursor: pointer;
@@ -828,8 +842,8 @@ h1 {
 
 .triangle {
   margin-left: 15vw;
-  margin-top: 4.5vw;
-  margin-bottom: 4.5vw;
+  margin-top: 2.2em;
+  margin-bottom: 2em;
 }
 @media all and (min-width: 767px) and (max-width: 1023px) {
   .triangle {
@@ -872,6 +886,77 @@ h1 {
 
 .contenu a {
   text-decoration: none;
+}
+
+.modal--overlay {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(190, 184, 184, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 15;
+}
+
+.modal {
+  background-color: white;
+  border: #a5a4a4 1px solid;
+  box-shadow: 2px 2px 8px #5c5b5b;
+  border-radius: 9px;
+  overflow: hidden;
+  position: relative;
+}
+.modal img {
+  max-width: 85vw;
+  max-height: 75vh;
+  margin: 5vw;
+  display: block;
+  border-radius: 9px;
+  margin-top: calc(5vw + 3em);
+}
+
+.close-modale {
+  position: absolute;
+  top: 0.7em;
+  right: 0.7em;
+  cursor: pointer;
+}
+@media all and (min-width: 1023px) {
+  .close-modale {
+    top: 1em;
+    right: 1em;
+  }
+}
+.close-modale .fa-times {
+  background-color: #c03030;
+  box-shadow: 1px 1px 4px #494949;
+  color: white;
+  font-size: 0.9em;
+  border-radius: 2px;
+  margin: 0.3em;
+  padding: 0.2em;
+}
+@media all and (min-width: 1023px) {
+  .close-modale .fa-times {
+    font-size: 1.2em;
+    margin: 0.5em;
+  }
+}
+.close-modale p {
+  margin-top: 0.8em;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+@media all and (min-width: 767px) {
+  .close-modale p {
+    font-size: 1.1em;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -2,7 +2,7 @@
   z-index: 10;
   margin-top: 0;
   background-color: $color-primary;
-  height: 35vw;
+  height: auto;
   width: 100%;
   box-shadow: 0 0 8px grey;
   padding: 1em;
@@ -27,6 +27,10 @@
     padding-left: 2vw;
     padding-right: 2vw;
   }
+  @media all and(max-width: $bkpt-mob) {
+    padding-top: 0em;
+    padding-bottom: 0em;
+  }
   & a {
     text-decoration: none;
     color: inherit;
@@ -47,18 +51,20 @@
   }
 
   & img {
-    max-height: 30vw;
+    max-height: 23vw;
     width: auto;
     border-radius: 50%;
     box-shadow: 1px 1px 5px grey;
     border: ridge 2px $color-primary;
-    margin-top: 1em;
+    margin-top: 0.5em;
+
     @include tab-version {
       max-height: 13vw;
       margin-top: 0;
     }
     @include desk-version {
       max-height: 80px;
+      margin-top: 1em;
     }
     &:hover {
       transform: scale(1.4);
@@ -71,13 +77,15 @@
   display: flex;
   align-items: center;
   margin: 0;
-  margin-bottom: 1.2em;
+  margin-bottom: 0.5em;
   @include tab-version {
     margin-bottom: 0.6em;
   }
-
+  @include desk-version {
+    margin-bottom: 1.2em;
+  }
   & p {
-    font-family: /*"Train One"*/ "Merienda One", cursive;
+    font-family: "Merienda One", cursive;
     font-weight: 600;
     font-size: 1.4em;
     margin-left: 0.5em;

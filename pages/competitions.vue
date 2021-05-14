@@ -41,15 +41,19 @@
 import Sidebar from '../components/Sidebar.vue';
 import Expeitem from '../components/Expeitem.vue';
 import Triangle from '../components/Triangle.vue';
+//import ImageModale from '../components/Imagemodale';
 
 export default {
      components: {
     'sidebar': Sidebar,
-    'expeitem': Expeitem, 'triangle' : Triangle
+    'expeitem': Expeitem, 
+    'triangle' : Triangle, 
+    //'imagemodale' : ImageModale,
     },
     data(){
         return{
-             pointsforts: ['Ténacité', 'Rigueur', 'Méthodologie, organisation', 'Persévérance', 'Dépassement de soi', "Esprit d'équipe", 'Sens du travail', 'Goût pour le challenge', 'Créativité'], 
+
+            pointsforts: ['Ténacité', 'Rigueur', 'Méthodologie, organisation', 'Persévérance', 'Dépassement de soi', "Esprit d'équipe", 'Sens du travail', 'Goût pour le challenge', 'Créativité'], 
             competences:['Gestion des émotions', "Optimisation de l'entrainement", 'Clicker-training', 'Agility', 'Troupeau', 'Dogdancing', 'CaniVTT', 'Cavage', 'Escalade', "Gymnastique", 'Sports-études', 'Endurance']
         ,sportscanins:{   img:'/sportscanins.jpg' ,
                     title: "Sports canins : agility (grade 3), dogdancing (catégorie avancé), caniVTT, cavage", 

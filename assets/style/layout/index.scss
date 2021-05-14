@@ -41,7 +41,7 @@
     font-size: 1.2em;
     background-color: rgba(darken($color-secondary, 30%), 0.7);
     border-radius: 10px;
-    box-shadow: 3px 3px 10px $color-tertiary;
+    box-shadow: 3px 3px 8px $color-tertiary;
     padding: 0.4em;
     font-style: italic;
     @include desk-and-tab-version {

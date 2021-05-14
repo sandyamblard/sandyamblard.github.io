@@ -1,0 +1,64 @@
+.modal--overlay {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(190, 184, 184, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 15;
+}
+
+.modal {
+  background-color: white;
+  border: rgb(165, 164, 164) 1px solid;
+  box-shadow: 2px 2px 8px rgb(92, 91, 91);
+  border-radius: 9px;
+  overflow: hidden;
+  position: relative;
+  & img {
+    max-width: 85vw;
+    max-height: 75vh;
+    margin: 5vw;
+    display: block;
+    border-radius: 9px;
+    margin-top: calc(5vw + 3em);
+  }
+}
+
+.close-modale {
+  position: absolute;
+  top: 0.7em;
+  right: 0.7em;
+  @include desk-version {
+    top: 1em;
+    right: 1em;
+  }
+  cursor: pointer;
+  & .fa-times {
+    background-color: rgb(192, 48, 48);
+    box-shadow: 1px 1px 4px rgb(73, 73, 73);
+    color: white;
+    font-size: 0.9em;
+    border-radius: 2px;
+    margin: 0.3em;
+    padding: 0.2em;
+    @include desk-version {
+      font-size: 1.2em;
+      margin: 0.5em;
+    }
+  }
+  & p {
+    margin-top: 0.8em;
+    font-size: 0.9em;
+    font-weight: bold;
+    @include desk-and-tab-version {
+      font-size: 1.1em;
+    }
+  }
+}
