@@ -25,7 +25,7 @@
     color: rgb(68, 68, 68);
     font-style: italic;
     font-size: 0.9em;
-    margin-top: 0.4em;
+    margin-top: 0.8em;
     margin-bottom: 0em;
     &:hover {
       text-decoration: underline;
@@ -63,7 +63,7 @@
 .dev-icone {
   height: 40px;
   width: auto;
-  margin-top: 0.4em;
+  margin-top: 0.8em;
 }
 
 .expe--link::before {
@@ -123,4 +123,12 @@
 
 .randos .expe--img {
   object-position: center 45%;
+}
+
+.itemescalade .expe--img {
+  object-position: center 30%;
+}
+
+.itemgym .expe--img {
+  object-position: center 25%;
 }

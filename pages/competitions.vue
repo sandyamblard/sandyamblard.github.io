@@ -7,8 +7,8 @@
                 <h2>Expériences</h2>
                 <div class='expe__list'>
                     <expeitem :expe='sportscanins' class='itemsolo'></expeitem>
-                    <expeitem :expe='escalade' ></expeitem>
-                    <expeitem :expe='gym' ></expeitem>
+                    <expeitem :expe='escalade' class='itemescalade'></expeitem>
+                    <expeitem :expe='gym' class='itemgym' ></expeitem>
                 </div>
             </div>  
             <div class='contenu-item'>
@@ -60,12 +60,12 @@ export default {
                     paragraphes: ['Depuis 2008 :',
                         '- Nombreux concours avec plusieurs chiens (8)', '- Niveau local, régional, national et international'],
                     perfs:['Equipe de France de Dogdancing 2019', 'Participation aux championnats du monde de Dogdancing 2019 en HTM et Freestyle, classée 15ème en HTM', "Championne régionale d'agility", "3 fois Vice-Championne régionale d'agility", "Vainqueur de la coupe régionale d'agility", "Plusieurs sélections pour le Grand Prix de France en agility, Dogdancing et CaniVTT", "Sélections pour le championnat de France d'agility", "Vainqueur du Grand Prix de France de Dogdancing, catégorie HTM novice", "2ème Grand Prix de France de Dogdancing, catégorie HTM intermédiaire", "2ème Grand Prix de France de Dogdancing, catégorie HTM avancé", "2ème Grand Prix de France de Dogdancing, catégorie Freestyle intermédiaire", "4ème au classement annuel du challenge régional du caniVTT, catégorie Senior Femme", "Nombreux podiums en concours locaux"],  
-            }, escalade:{   img:'' ,
+            }, escalade:{   img:'/escalade.jpg' ,
                     title: "Escalade", 
                     paragraphes: ['1998-2001 :',
                         '- Compétitions au niveau départemental, régional et national', '- Catégorie cadette puis junior', "- Membre de l'équipe compétition jeune et de l'équipe loisirs adulte", "- 20h d'entrainement hebdomadaire"],
                     perfs:["Membre de l'équipe départementale jeune pendant 2ans", 'Participation aux championnats de France de difficulté', 'Participation à des opens internationaux', 'Plusieurs podiums sur concours départementaux et régionaux'],  
-            }, gym:{   img:'' ,
+            }, gym:{   img:'gym.jpg' ,
                     title: "Gymnastique", 
                     paragraphes: ['1989-1997 :',
                         '- Compétitions au niveau départemental, régional et national',"- 20h d'entrainement hebdomadaire",    '- Compétitions en individuel ou par équipe',  ],

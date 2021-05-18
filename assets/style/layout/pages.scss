@@ -106,6 +106,7 @@
     color: inherit;
     font-style: italic;
     color: rgb(68, 68, 68);
+
     &:hover {
       font-weight: 600;
     }
@@ -114,4 +115,9 @@
   .bold {
     text-decoration: underline;
   }
+}
+
+.list-bis li {
+  margin-top: 0.6em;
+  margin-bottom: 0.6em;
 }

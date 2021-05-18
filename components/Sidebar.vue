@@ -4,7 +4,9 @@
             <h2>Profil</h2>
             <p> <strong>Développeur web</strong>, je suis à la recherche d'un poste front-end ou full-stack. <br>
             Assidue, rigoureuse, appliquée, autonome, j'apprends vite et je pourrais rapidement m'intégrer à une équipe.<br>  
-            Disponible immédiatement, CDI ou CDD. Télétravail et temps partiel possible.</p>
+            Créative, habituée aux défis et à trouver des solutions, l'échec est pour moi un moyen de s'améliorer et de progresser.<br> 
+            Disponible immédiatement, CDI ou CDD.<br>
+            Télétravail et temps partiel possible.</p>
         </div>
         <slot>
         <h2>Points forts</h2>

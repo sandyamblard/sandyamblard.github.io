@@ -391,6 +391,11 @@ h1 {
   text-decoration: underline;
 }
 
+.list-bis li {
+  margin-top: 0.6em;
+  margin-bottom: 0.6em;
+}
+
 .topbar {
   z-index: 10;
   margin-top: 0;
@@ -641,7 +646,7 @@ h1 {
   background-color: #c2e49c;
   box-shadow: 0 0 8px grey;
   width: 100%;
-  height: 8em;
+  height: 9em;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -655,6 +660,16 @@ h1 {
     justify-content: space-between;
     align-items: center;
     height: 2.5em;
+  }
+}
+@media all and (min-width: 767px) and (max-width: 1023px) {
+  .bottom {
+    font-size: 0.9em;
+  }
+}
+@media all and (min-width: 1023px) {
+  .bottom {
+    font-size: 1.1em;
   }
 }
 .bottom a {
@@ -836,7 +851,7 @@ h1 {
   color: #444444;
   font-style: italic;
   font-size: 0.9em;
-  margin-top: 0.4em;
+  margin-top: 0.8em;
   margin-bottom: 0em;
 }
 .expe__item a:hover {
@@ -873,7 +888,7 @@ h1 {
 .dev-icone {
   height: 40px;
   width: auto;
-  margin-top: 0.4em;
+  margin-top: 0.8em;
 }
 
 .expe--link::before {
@@ -937,6 +952,14 @@ h1 {
 
 .randos .expe--img {
   object-position: center 45%;
+}
+
+.itemescalade .expe--img {
+  object-position: center 30%;
+}
+
+.itemgym .expe--img {
+  object-position: center 25%;
 }
 
 .triangle--text {
