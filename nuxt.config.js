@@ -15,7 +15,12 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { name: 'description', content: 'CV Sandy Amblard, développeur web Vue.JS, NuxtJS, mais aussi docteur vétérinaire, éleveur canin. En recherche poste, télétravail possible, temps partiel possible' }
+      { name: 'description', content: 'CV Sandy Amblard, développeur web Vue.JS, NuxtJS, mais aussi docteur vétérinaire, éleveur canin. En recherche poste, télétravail possible, temps partiel possible' },
+      {property:"og:title", content:"CV en ligne et port-folio, Sandy AMBLARD"},
+      {property: "og:type", content:"website"}, 
+      {property: "og:url", content:"https://sandyamblard.github.io/"},
+      {property:"og:image", content:"https://sandyamblard.github.io/apercusite.jpg"},
+      {property:"og:description", content:"CV en ligne et port-folio, Sandy AMBLARD, développeur web"}
     ],
     link: [
       { rel: 'icon', type: 'image/png', href: '/favicone.png' },
