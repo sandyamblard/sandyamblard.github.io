@@ -6,7 +6,7 @@
             <div class='contenu-item'>
                 <h2>Expériences</h2>
                 <div class='expe__list expe--elevage'>
-                    <expeitem :expe='chiens'></expeitem>
+                    <expeitem :expe='chiens' ></expeitem>
                     <expeitem :expe='brebis'></expeitem>
                     <expeitem :expe='chevres' class='chevres'></expeitem>
                     <expeitem :expe='volailles' class='coureurs'></expeitem>
@@ -25,7 +25,7 @@
         <sidebar>
             <h2>Points forts spécifiques</h2>
             <ul>
-                <li v-for='(pointfort, index) in pointsforts' :key=index><i class="far fa-star"></i>{{ pointfort }}</li>
+                <li v-for='(pointfort, index) in pointsforts' :key=index class='appeardelayed'><i class="far fa-star"></i>{{ pointfort }}</li>
         </ul>
             <h2>Compétences spécifiques</h2>
             <ul>
@@ -55,9 +55,9 @@ export default {
             competences:['Bien-être animal','Connaissances zootechniques', 'Etudes de lignées', 'Génétique et sélection', "Planification",  "Socialisation poussée", "Observation et détection des caractères","Construction d'habitats adaptés",'Communication (internet et réseaux)', 'Création de logo',  'Relation client', 'Gestion des urgences']
         ,chiens:{   img:'/chiots.jpg' ,
                     title: "Elevage canin professionnel des Cimes de Pyrène", 
-                    paragraphes: ['Depuis 2005 : ', '- Elevage, sélection et utilisation de bergers australiens ','- Membre du club de race international (ASCA)', "- Etude approfondie et minutieuse des lignées", "- Saillies à l'international, import de semence et inséminations congelées", "- Import et export de chiens à l'étranger", "- Utilisation de lignées travail", "- Eveil, socialisation, pré-éducation des chiots", "- Plusieurs chiots placés en Ecole de chiens guides d'aveugles",  "- Détection des familles adaptées", "- Rédaction livre informatif pour les adoptants (60 pages)", "- Construction lieux de vie et matériel", '- Concours dans plusieurs disciplines', '- Création de logo et site internet et blogs, travail sur expérience utilisateur'],
+                    paragraphes: ['Depuis 2005 : ', '- Elevage, sélection et utilisation de bergers australiens ','- Membre du club de race international (ASCA)', "- Etude approfondie et minutieuse des lignées", "- Saillies à l'international, import de semence et inséminations congelées", "- Import et export de chiens à l'étranger", "- Utilisation de lignées travail", "- Eveil, socialisation, pré-éducation des chiots", "- Plusieurs chiots placés en Ecole de chiens guides d'aveugles",  "- Détection des familles adaptées", "- Rédaction livre informatif pour les adoptants (60 pages)", "- Construction lieux de vie et matériel", '- Concours dans plusieurs disciplines', '- Photos, création de logo, création du site internet (en cours de refonte)'],
                     icones: ['/cdp.jpg'],
-                        // lien: 'Voir le GitHub du projet', link: 'https://github.com/sandyamblard/sandyamblard-2-21122020'
+                    lien: "Voir le site web de l'élevage", link: 'https://www.cimesdepyrene.fr'
         }, brebis:{   img:'/brebis.jpg' ,
                     title: "Elevage de brebis allaitantes", 
                     paragraphes: ['Depuis 2009 : ', '- Elevage sélectif de brebis allaitantes ','- 50 brebis-mères environ','- Races basco-béarnaises, Black-Face, Suffolk', "- Sélection pour amélioration de la rusticité, resistance à l'humidité, autonomie en élevage extensif" , "- Création d'une race", '- Elevage extensif sur environ 30ha', '- Transhumance', "- Construction, rénovation et entretien de leurs lieux de vie adaptés (bergeries, pâturages)", '- Suivi sanitaire du troupeau'],

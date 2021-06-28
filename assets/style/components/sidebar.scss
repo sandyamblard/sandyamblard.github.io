@@ -110,9 +110,44 @@
   padding-top: 0.3em;
   padding-bottom: 0.3em;
   margin-bottom: 1em;
+  ///animation entrée items de compétences et soft skills :
+  animation-name: entreeitems;
+  animation-duration: 0.4s;
+  animation-iteration-count: 1;
+  //animation-fill-mode: both;
+  animation-fill-mode: backwards;
+  @for $i from 2 through 15 {
+    &:nth-child(#{$i}) {
+      animation-delay: ($i) * 0.05s;
+    }
+  }
+  /////
   & .fa-star {
     color: $color-secondary;
     font-size: 1.2em;
     margin-right: 0.5em;
+  }
+}
+
+@keyframes entreeitems {
+  0% {
+    transform: translateY(4vh);
+    opacity: 0;
+    animation-timing-function: ease-in;
+  }
+  50% {
+    transform: translateY(2vh);
+    opacity: 0.3;
+    animation-timing-function: linear;
+  }
+  75% {
+    transform: translateY(1vh);
+    opacity: 0.5;
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+    animation-timing-function: ease-out;
   }
 }

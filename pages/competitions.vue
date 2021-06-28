@@ -23,8 +23,8 @@
         </section>
         <sidebar>
             <h2>Points forts spécifiques</h2>
-            <ul>
-                <li v-for='(pointfort, index) in pointsforts' :key=index><i class="far fa-star"></i>{{ pointfort }}</li>
+            <ul >
+                <li v-for='(pointfort, index) in pointsforts' :key=index class='appeardelayed'><i class="far fa-star"></i>{{ pointfort }}</li>
         </ul>
             <h2>Compétences spécifiques</h2>
             <ul>

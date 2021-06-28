@@ -6,6 +6,7 @@
             <div class='contenu-item'>
                 <h2>Réalisations</h2>
                 <div class='expe__list'>
+                    <expeitem :expe='siteCDP'></expeitem>
                     <expeitem :expe='projetSix'></expeitem>
                     <expeitem :expe='projetQuatre'></expeitem>
                     <expeitem :expe='projetCinq'></expeitem>
@@ -20,11 +21,10 @@
                     <li class="form__item"><span>Décembre 2020 - Avril 2021 : <span class="bold">DEVELOPPEUR WEB, titre RNCP de niveau 5</span>, OpenClassRooms :</span>
                     <ul class='list-bis'>
                         <li>Réalisation de 6 projets concrets, en Front-end, Back-end, SEO, Performances, Accessibilité, Sécurité,</li>
-                        <li>Utilisation des technologies HTML5, CSS3, SASS, Javascript, VueJS et NuxtJS, NodeJS, Express, MongoDB, MySQL, Sequelize,</li>
+                        <li>Utilisation des technologies HTML5, CSS3, SASS, Javascript, VueJS, NodeJS, Express, MongoDB, MySQL, Sequelize,</li>
                         <li>Utilisation des outils VS Code, Git et GitHub,</li>
                         <li>Respect des standards W3C, WCAG, OWASP,</li>
                         <li>Tous les projets validés en 20 semaines,</li>
-                        <li>Titre RNCP en attente de validation par le jury</li>
                     </ul>
                     <a href="https://github.com/sandyamblard" class="expe--link">Voir sur GitHub</a>
                     
@@ -35,7 +35,7 @@
         <sidebar>
             <h2>Points forts spécifiques</h2>
             <ul>
-                <li v-for='(pointfort, index) in pointsforts' :key=index><i class="far fa-star"></i>{{ pointfort }}</li>
+                <li v-for='(pointfort, index) in pointsforts' :key=index class='appeardelayed'><i class="far fa-star"></i>{{ pointfort }}</li>
         </ul>
             <h2>Compétences spécifiques</h2>
             <ul>
@@ -63,30 +63,41 @@ export default {
                         paragraphes: ['- Transformation de la maquette en site web via HTML5 et CSS3 ', '- Responsive design'],
                         icones: ['/minicsshtml.png', '/minigit.png', '/minivscode.png'],
                         lien: 'Voir le GitHub du projet', link: 'https://github.com/sandyamblard/sandyamblard-2-21122020'},
+
             projetDeux:{ img:'/ohmyfood.jpg' ,
                         title: "MVP de l'application OhMyFood", 
-                        paragraphes: ['- Animations CSS', '- HTML, CSS, pré-processeur Sass', '- Responsive design'],
-                        icones: ['/minisass.png'],
+                        paragraphes: ['- Transformation de la maquette en site web via HTML5 et CSS3 ','- Animations CSS', '- HTML, CSS, pré-processeur Sass', '- Responsive design'],
+                        icones: ['/minicsshtml.png','/minisass.png'],
                         lien: 'Voir le GitHub du projet', link: 'https://github.com/sandyamblard/sandyamblard-3-13012021'},
+
             projetTrois:{ img:'/orinoco.jpg' ,
                         title: "Front-end d'une application e-commerce", 
                         paragraphes: ['- Javascript sans framework', '- HTML, CSS, Sass (Design libre)', '- Responsive design'],
                         icones: ['/minijs.png'],
                         lien: 'Voir le GitHub du projet', link: 'https://github.com/sandyamblard/sandyamblard-5-04022021'}, 
-            projetQuatre:{ img:'/piquante.jpg' ,
+           
+           projetQuatre:{ img:'/piquante.jpg' ,
                         title: "Back-end d'une application d'avis gastronomique", 
                         paragraphes: ["- Création d'une API REST sécurisée", '- Utilisation de NodeJS, Express et MongoDB', "- Stockage de données sécurisé (OWASP)"],
                         icones: ['/mininode.png', '/minimongo.jpg'],
                         lien: 'Voir le GitHub du projet', link: 'https://github.com/sandyamblard/sandyamblard-6-25022021'}, 
-            projetCinq:{ img:'/chouetteagence.jpg' ,
+           
+           projetCinq:{ img:'/chouetteagence.jpg' ,
                         title: "Optimisation du site de la Chouette Agence", 
                         paragraphes: ['- Travail sur SEO, performances et accessibilité', '- Responsive design'],
                         lien: 'Voir le GitHub du projet', link: 'https://github.com/sandyamblard/sandyamblard-4-12032021'}, 
-            projetSix:{ img:'/groupomania.jpg' ,
+           
+           projetSix:{ img:'/groupomania.jpg' ,
                         title: "Création d'un réseau social d'enteprise (Fullstack)", 
                         paragraphes: ['- Frontend avec VueJS (Design libre)', '- Back-end avec NodeJS, Express, MySQL et Sequelize', "- Stockage de données sécurisé (OWASP)" , '- Responsive design'],
                         icones: ['/minivue.png', '/mininode.png', '/minimysql.png', '/minisequelize.jpg'],
-                        lien: 'Voir le GitHub du projet', link: 'https://github.com/sandyamblard/sandyamblard-7-30032021'},                                        }
+                        lien: 'Voir le GitHub du projet', link: 'https://github.com/sandyamblard/sandyamblard-7-30032021'}, 
+           
+           siteCDP:{ img:'/sitecdp.jpg' ,
+                        title: "Refonte totale du site de l'élevage des Cimes de Pyrène - 120 pages (en cours depuis juin 2021)", 
+                        paragraphes: [ '- Utilisation de Nuxt.JS pour générer un site statique', '- Responsive design', "- Accessibilité", "- SEO, Suivi d'audience", '- Contenu, photos, design'],
+                        icones: ['/mininuxt.jpg','/minisass.png', '/googleanalytics.jpg'],
+                        lien: 'Voir le site web', link: 'https://www.cimesdepyrene.fr'},                                                   }
     },
   components: {
     'sidebar': Sidebar,

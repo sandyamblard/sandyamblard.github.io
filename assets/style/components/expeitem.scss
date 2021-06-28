@@ -3,6 +3,21 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+
+    & .expe__item {
+      ///animation entrée items de compétences et soft skills :
+      animation-name: fadein;
+      animation-duration: 0.4s;
+      animation-iteration-count: 1;
+      //animation-fill-mode: both;
+      animation-fill-mode: backwards;
+      @for $i from 1 through 15 {
+        &:nth-child(#{$i}) {
+          animation-delay: ($i) * 0.2s;
+        }
+      }
+      /////
+    }
   }
 }
 .expe__item {
@@ -113,8 +128,21 @@
 .coureurs .expe--img {
   object-position: center 58%;
 }
+
 .itemsolo .expe--img {
   object-position: center 90%;
+  @include tab-version {
+    height: 22vw;
+  }
+  @include desk-version {
+    height: 12vw;
+  }
+}
+
+.chiens .expe--img {
+  @include desk-and-tab-version {
+    object-position: center 60%;
+  }
 }
 
 .maison .expe--img {

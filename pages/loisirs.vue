@@ -32,11 +32,11 @@
         <sidebar>
             <h2>Points forts spécifiques</h2>
             <ul>
-                <li v-for='(pointfort, index) in pointsforts' :key=index><i class="far fa-star"></i>{{ pointfort }}</li>
+                <li v-for='(pointfort, index) in pointsforts' :key=index class='appeardelayed'><i class="far fa-star"></i>{{ pointfort }}</li>
         </ul>
             <h2>Compétences spécifiques</h2>
             <ul>
-                <li class='comp-item' v-for='(comp, index) in competences' :key=index>
+                <li class='comp-item appeardelayed' v-for='(comp, index) in competences' :key=index>
                     <i class="fas fa-star"></i>{{ comp }}
                 </li>
             </ul>
