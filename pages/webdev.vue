@@ -94,8 +94,8 @@ export default {
                         lien: 'Voir le GitHub du projet', link: 'https://github.com/sandyamblard/sandyamblard-7-30032021'}, 
            
            siteCDP:{ img:'/sitecdp.jpg' ,
-                        title: "Refonte du site de l'élevage des Cimes de Pyrène - 120 pages (en cours depuis juin 2021)", 
-                        paragraphes: [ '- Utilisation de Nuxt.JS pour générer un site statique', '- Responsive design', "- Accessibilité", "- SEO, Suivi d'audience", '- Contenu, photos, design, logo'],
+                        title: "Refonte du site de l'élevage des Cimes de Pyrène", 
+                        paragraphes: [ '(120 pages - en cours de puis juin 2021)', '- Utilisation de Nuxt.JS pour générer un site statique', '- Responsive design', "- Accessibilité", "- SEO, Suivi d'audience", '- Contenu, photos, design, logo'],
                         icones: ['/mininuxt.jpg','/minisass.png', '/googleanalytics.jpg'],
                         lien: 'Voir le site web', link: 'https://www.cimesdepyrene.fr'},                                                   }
     },
