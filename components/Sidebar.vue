@@ -5,7 +5,7 @@
             <p> <strong>Développeur web</strong>, je suis à la recherche d'un poste front-end ou full-stack. <br>
             Assidue, rigoureuse, appliquée, autonome, j'apprends vite et je pourrais rapidement m'intégrer à une équipe. 
             Créative et polyvalente, je suis habituée aux challenges et à trouver des solutions à différentes problématiques .<br> 
-            Disponible immédiatement, CDI ou CDD.<br>
+            Disponible immédiatement, CDI ou CDD, ou missions freelance.<br>
             Télétravail et temps partiel possible.</p>
         </div>
         <slot>
