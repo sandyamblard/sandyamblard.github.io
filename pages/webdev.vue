@@ -6,6 +6,7 @@
             <div class='contenu-item'>
                 <h2>Réalisations</h2>
                 <div class='expe__list'>
+                    <expeitem :expe='sitesWordPress'></expeitem>
                     <expeitem :expe='siteCDP'></expeitem>
                     <expeitem :expe='projetSix'></expeitem>
                     <expeitem :expe='projetQuatre'></expeitem>
@@ -95,9 +96,15 @@ export default {
            
            siteCDP:{ img:'/sitecdp.jpg' ,
                         title: "Refonte du site de l'élevage des Cimes de Pyrène", 
-                        paragraphes: [ '(120 pages - en cours depuis juin 2021)', '- Utilisation de Nuxt.JS pour générer un site statique', '- Responsive design', "- Accessibilité", "- SEO, Suivi d'audience", '- Contenu, photos, design, logo'],
+                        paragraphes: [ '- Utilisation de Nuxt.JS pour générer un site statique', '- Responsive design et accessibilité', "- SEO, Suivi d'audience", '- Contenu, photos, design, logo', "- Optimisation d'images"],
                         icones: ['/mininuxt.jpg','/minisass.png', '/googleanalytics.jpg'],
-                        lien: 'Voir le site web', link: 'https://www.cimesdepyrene.fr'},                                                   }
+                        lien: 'Voir le site des Cimes de Pyrène', link: 'https://www.cimesdepyrene.fr'},   
+            sitesWordPress:{ img:'/sitepdp.jpg' ,
+                        title: "Création de sites web avec WordPress", 
+                        paragraphes: [ '- Utilisation du CMS WordPress pour pages statiques et blog', '- Création boutique en ligne avec Woocommerce',  '- Sécurité (WordFence)',"- SEO (YoastSEO)"],
+                        icones: ['/wordpressicone.jpg'],
+                        lien: 'Voir le site des Plumes de Pyrène', link: 'https://www.plumesdepyrene.fr'},                                                  
+        }
     },
   components: {
     'sidebar': Sidebar,

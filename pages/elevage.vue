@@ -70,7 +70,7 @@ export default {
                     title: "Elevage de volailles d'ornement", 
                     paragraphes: ['Depuis 2018 : ', "- Elevage sélectif de canards coureurs indiens, toutes couleurs","- Elevage sélectif de poules de race Marans, Orpington, Faverolles",  "- Poules pondeuses et oies", "- Echange d'oeufs au niveau national", "- Construction, rénovation et entretien d'habitats adaptés. Protections anti-prédateurs"],
                     icones: ['/logoplumes.png'],
-                        // lien: 'Voir le GitHub du projet', link: 'https://github.com/sandyamblard/sandyamblard-2-21122020'
+                    lien: "Voir le site web de l'élevage", link: 'https://www.plumesdepyrene.fr'
         },     
         }
     }

@@ -1093,6 +1093,10 @@ h1 {
   margin-top: 0.8em;
 }
 
+.expe--link {
+  font-weight: 800;
+}
+
 .expe--link::before {
   content: "";
   display: inline-block;
