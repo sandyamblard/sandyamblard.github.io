@@ -3,8 +3,8 @@
         <div class="profil">
             <h2>Profil</h2>
             <p> <strong>Développeur web</strong>, je suis à la recherche d'un poste front-end ou full-stack. <br>
-            Assidue, rigoureuse, appliquée, autonome, j'apprends vite et je pourrais rapidement m'intégrer à une équipe. 
-            Créative et polyvalente, je suis habituée aux challenges et à trouver des solutions à différentes problématiques .<br> 
+            Assidue, rigoureuse, appliquée, autonome, j'apprends vite et je pourrais rapidement m'intégrer à une équipe.
+            Créative et polyvalente, je suis habituée aux challenges et à trouver des solutions à différentes problématiques .<br>
             Disponible immédiatement, CDI ou CDD, ou missions freelance.<br>
             Télétravail et temps partiel possible.</p>
         </div>
@@ -24,11 +24,14 @@
         <h2>Compétences</h2>
         <NuxtLink to='/webdev'>
             <ul>
-                <li class='appeardelayed'><i class="fas fa-code"></i>VS Code, Git, GitHub</li>
-                <li class='appeardelayed'><i class="fas fa-code"></i>HTML, CSS, SASS</li>
+                <li class='appeardelayed'><i class="fas fa-code"></i>VS Code, PHP Storm</li>
+              <li class='appeardelayed'><i class="fas fa-code"></i>Git, GitHub, GitLab</li>
+              <li class='appeardelayed'><i class="fas fa-code"></i>HTML, CSS, SASS</li>
                 <li class='appeardelayed'><i class="fas fa-code"></i>JAVASCRIPT</li>
                 <li class='appeardelayed'><i class="fas fa-code"></i>VueJS, Nuxt, NodeJS</li>
-                <li class='appeardelayed'><i class="fas fa-code"></i>MongoDB, Sequelize, MySql</li>
+              <li class='appeardelayed'><i class="fas fa-code"></i>PHP, Twig</li>
+              <li class='appeardelayed'><i class="fas fa-code"></i>MongoDB, Sequelize, MySql</li>
+              <li class='appeardelayed'><i class="fas fa-code"></i>Drupal, Wordpress</li>
             </ul>
         </NuxtLink>
         <NuxtLink to='/veto'>
