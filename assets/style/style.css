@@ -38,7 +38,7 @@ button {
 }
 
 h1 {
-  color: #43651c;
+  color: #BD4328;
   margin-top: 0;
   padding-top: 1em;
   font-size: 1.9em;
@@ -59,7 +59,7 @@ h1 {
 
 *:focus {
   border-radius: 5px;
-  border: 2px #43651c;
+  border: 2px #785939;
 }
 
 .contenu {
@@ -113,6 +113,10 @@ h1 {
 }
 .appeardelayed:nth-child(15) {
   animation-delay: 0.75s;
+}
+
+.strong {
+  font-weight: bold;
 }
 
 @keyframes entreeitems {
@@ -184,15 +188,15 @@ h1 {
   align-items: center;
 }
 .bann p {
-  color: #e7f4d8;
+  color: #fffefe;
 }
 .bann p:nth-child(2) {
   text-transform: uppercase;
   font-weight: 600;
   font-size: 1.2em;
-  background-color: rgba(53, 8, 16, 0.7);
+  background-color: rgba(63, 22, 13, 0.7);
   border-radius: 10px;
-  box-shadow: 3px 3px 8px #ffedf4;
+  box-shadow: 3px 3px 8px #FDF6E4;
   padding: 0.4em;
   font-style: italic;
 }
@@ -328,8 +332,13 @@ h1 {
 }
 
 .intro {
-  margin-bottom: 2vw;
+  margin-bottom: 2.5vw;
+  margin-top: 2vw;
   text-align: justify;
+}
+.intro ul {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .intro a {
@@ -339,6 +348,17 @@ h1 {
 }
 .intro a:hover {
   text-decoration: underline;
+}
+
+.titre--intro::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0.15em;
+  background: linear-gradient(to right, #f8f6f6 30%, #BD4328, #f8f6f6 70%);
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  border-radius: 5px;
 }
 
 .entete {
@@ -363,7 +383,7 @@ h1 {
 }
 
 .contenu h2 {
-  color: #43651c;
+  color: #785939;
   font-size: 1.7em;
 }
 .contenu h2::after {
@@ -371,7 +391,7 @@ h1 {
   display: block;
   width: 12em;
   height: 0.15em;
-  background: linear-gradient(to right, #43651c, #f8f6f6);
+  background: linear-gradient(to right, #785939, #f8f6f6);
   margin-top: 0.5em;
 }
 @media all and (max-width: 370px) {
@@ -449,7 +469,7 @@ h1 {
 }
 
 .subtitle {
-  color: #43651c;
+  color: #785939;
   text-align: center;
   margin-top: 0.5em;
   font-size: 1.3em;
@@ -465,7 +485,7 @@ h1 {
 .form__item a {
   color: inherit;
   font-style: italic;
-  color: #444444;
+  color: #BD4328;
 }
 .form__item a:hover {
   font-weight: 600;
@@ -482,7 +502,7 @@ h1 {
 .topbar {
   z-index: 10;
   margin-top: 0;
-  background-color: #c2e49c;
+  background-color: #E6D8CA;
   height: auto;
   width: 100%;
   box-shadow: 0 0 8px grey;
@@ -545,7 +565,7 @@ h1 {
   width: auto;
   border-radius: 50%;
   box-shadow: 1px 1px 5px grey;
-  border: ridge 2px #c2e49c;
+  border: ridge 2px #E6D8CA;
   margin-top: 0.5em;
 }
 @media all and (min-width: 767px) and (max-width: 1023px) {
@@ -684,7 +704,7 @@ h1 {
     animation: appearmenu 0.4s ease-in-out both;
   }
   .nav a {
-    background-color: #dbefc4;
+    background-color: #f6f2ed;
     border-radius: 5px;
     margin: 0;
     margin-bottom: 6px;
@@ -695,7 +715,7 @@ h1 {
     margin-top: 1.6em;
   }
   .nav .nuxt-link-active {
-    background-color: #91ce4c;
+    background-color: #c5a585;
     box-shadow: 2px 2px 8px #3a3a3a;
     transform: scaleX(1.05);
   }
@@ -726,7 +746,7 @@ h1 {
   }
 }
 .bottom {
-  background-color: #c2e49c;
+  background-color: #E6D8CA;
   box-shadow: 0 0 8px grey;
   width: 100%;
   height: 9em;
@@ -742,7 +762,7 @@ h1 {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 2.5em;
+    height: 2em;
   }
 }
 @media all and (min-width: 767px) and (max-width: 1023px) {
@@ -793,11 +813,10 @@ h1 {
 }
 
 .sidebar {
-  background-color: #ffedf4;
+  background-color: #FDF6E4;
   padding: 1em;
   flex: 30%;
   margin-top: -6px;
-  box-shadow: 0 0 6px #e4536b;
 }
 @media all and (min-width: 767px) and (max-width: 1023px) {
   .sidebar {
@@ -824,14 +843,14 @@ h1 {
   margin-bottom: 1.5em;
 }
 .sidebar .far.fa-star, .sidebar .far.fa-comment {
-  color: #c61f3b;
+  color: #ca472b;
   font-size: 1.2em;
   font-weight: bold;
   margin-right: 0.4em;
   margin-bottom: 0.4em;
 }
 .sidebar .fa-code, .sidebar .fa-stethoscope, .sidebar .fa-paw, .sidebar .fa-trophy, .sidebar .fa-camera {
-  background-color: #c61f3b;
+  background-color: #ca472b;
   border-radius: 50%;
   font-size: 1.1em;
   padding: 0.4em;
@@ -848,7 +867,7 @@ h1 {
   text-decoration: underline;
 }
 .sidebar h2 {
-  color: #b91d37;
+  color: #BD4328;
   font-size: 1.2em;
   text-transform: uppercase;
   margin-top: 2em;
@@ -861,18 +880,18 @@ h1 {
   display: block;
   width: 8em;
   height: 0.15em;
-  background: linear-gradient(to right, #b91d37, #ffedf4);
+  background: linear-gradient(to right, #BD4328, #FDF6E4);
   margin-top: 0.5em;
   border-radius: 5px;
 }
 
 .profil {
-  background-color: #f3faec;
+  background-color: white;
   border-radius: 10px;
-  border: #9dd460 2px solid;
-  box-shadow: 3px 3px 8px #b91d37;
-  padding-left: 0.5em;
-  padding-right: 0.5em;
+  border: #cdb296 1px solid;
+  box-shadow: 0px 0px 3px #BD4328;
+  padding-left: 1em;
+  padding-right: 1em;
   text-align: justify;
 }
 @media all and (min-width: 1023px) {
@@ -889,8 +908,8 @@ h1 {
 
 .comp-item {
   border-radius: 20px;
-  border: 2px #ec8395 solid;
-  box-shadow: 2px 2px 6px grey;
+  border: 1px #e9a495 solid;
+  box-shadow: 0px 0px 4px grey;
   background-color: white;
   list-style: none;
   padding-left: 0.5em;
@@ -945,7 +964,7 @@ h1 {
   animation-delay: 0.75s;
 }
 .comp-item .fa-star {
-  color: #b91d37;
+  color: #BD4328;
   font-size: 1.2em;
   margin-right: 0.5em;
 }
@@ -1035,7 +1054,7 @@ h1 {
   padding: 0.5em;
   border-radius: 5px;
   background-color: white;
-  box-shadow: 0px 0px 3px #77b632;
+  box-shadow: 0px 0px 3px #b58c62;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1050,9 +1069,9 @@ h1 {
 }
 .expe__item a {
   text-decoration: none;
-  color: #444444;
+  color: #BD4328;
   font-style: italic;
-  font-size: 0.9em;
+  font-size: 1.1em;
   margin-top: 0.8em;
   margin-bottom: 0em;
 }
@@ -1083,7 +1102,7 @@ h1 {
 }
 @media all and (min-width: 1023px) {
   .expe--img {
-    height: 10vw;
+    height: 15vw;
   }
 }
 
@@ -1102,9 +1121,9 @@ h1 {
   display: inline-block;
   width: 0;
   height: 0;
-  border-left: black 7px solid;
-  border-top: transparent 7px solid;
-  border-bottom: transparent 7px solid;
+  border-left: #BD4328 1em solid;
+  border-top: transparent 0.5em solid;
+  border-bottom: transparent 0.5em solid;
   margin-right: 5px;
   vertical-align: middle;
 }
@@ -1119,7 +1138,7 @@ h1 {
   margin-right: 0.5em;
   margin-top: 0.25em;
   font-size: 1.3em;
-  color: #507921;
+  color: #8a6541;
 }
 
 .itemsolo {
@@ -1185,7 +1204,7 @@ h1 {
 }
 
 .triangle--text {
-  background-color: #b91d37;
+  background-color: #BD4328;
   box-shadow: 2px 2px 5px grey;
   color: white;
   text-decoration: none;
@@ -1233,14 +1252,14 @@ h1 {
   width: 0px;
   height: 0px;
   margin-top: 0;
-  border-top: #b91d37 5vw solid;
+  border-top: #BD4328 5vw solid;
   border-left: transparent 35vw solid;
   border-right: transparent 35vw solid;
   cursor: pointer;
 }
 @media all and (min-width: 767px) and (max-width: 1023px) {
   .triangle::after {
-    border-top: #b91d37 3vw solid;
+    border-top: #BD4328 3vw solid;
     border-left: transparent 20vw solid;
     border-right: transparent 20vw solid;
   }

@@ -105,7 +105,7 @@
   & a {
     color: inherit;
     font-style: italic;
-    color: rgb(68, 68, 68);
+    color: $color-secondary;
 
     &:hover {
       font-weight: 600;
@@ -121,3 +121,6 @@
   margin-top: 0.6em;
   margin-bottom: 0.6em;
 }
+
+
+

@@ -36,8 +36,8 @@ button {
 }
 
 h1 {
-  color: darken($color-primary, 50%);
-  //color: $color-secondary;
+  //color: darken($color-primary, 50%);
+  color: $color-secondary;
   margin-top: 0;
   padding-top: 1em;
   font-size: 1.9em;
@@ -76,6 +76,11 @@ h1 {
   }
   /////
 }
+
+.strong {
+  font-weight: bold;
+}
+
 
 @keyframes entreeitems {
   0% {

@@ -1,6 +1,6 @@
 <template>
     <div class="expe__item">
-        <img v-if='expe.img' class="expe--img" :src="expe.img" :alt="expe.title" @click='openModale(expe.img)' @keyup.enter='openModale(expe.img)' tabindex="0">
+        <img v-if='expe.img' class="expe--img" :src="expe.img" :alt="expe.title" @click='openModale(expe.img)' @keyup.enter='openModale(expe.img)' tabindex="0" title="Cliquez pour aggrandir">
         <p class="expe--title"> {{ expe.title }}</p>
         <p class="expe--para" v-for='(onepara, index) in expe.paragraphes' :key=index> {{ onepara }}</p>
         <ul v-if="expe.perfs" class="expe--perfs">
@@ -38,7 +38,7 @@ export default {
             this.modaleOpened = true;
             this.imageToOpen= url;
         }
-    }, 
+    },
     mounted() {
         emitter.on('modaleToClose', ()=> {
             this.modaleOpened = false;

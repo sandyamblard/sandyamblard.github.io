@@ -12,7 +12,7 @@
   padding: 1em;
   flex: 30%;
   margin-top: -6px;
-  box-shadow: 0 0 6px lighten($color-secondary, 19%);
+  //box-shadow: 0 0 6px lighten($color-secondary, 40%);
   @include tab-version {
     padding-right: 15%;
     padding-left: 15%;
@@ -86,10 +86,10 @@
 .profil {
   background-color: lighten($color-primary, 20%);
   border-radius: 10px;
-  border: darken($color-primary, 15%) 2px solid;
-  box-shadow: 3px 3px 8px $color-secondary;
-  padding-left: 0.5em;
-  padding-right: 0.5em;
+  border: darken($color-primary, 15%) 1px solid;
+  box-shadow: 0px 0px 3px $color-secondary;
+  padding-left: 1em;
+  padding-right: 1em;
   text-align: justify;
   @include desk-version {
     margin: 0.5em;
@@ -102,8 +102,8 @@
 
 .comp-item {
   border-radius: 20px;
-  border: 2px lighten($color-secondary, 30%) solid;
-  box-shadow: 2px 2px 6px grey;
+  border: 1px lighten($color-secondary, 30%) solid;
+  box-shadow: 0px 0px 4px grey;
   background-color: lighten($color-tertiary, 15%);
   list-style: none;
   padding-left: 0.5em;

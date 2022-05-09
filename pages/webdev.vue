@@ -112,13 +112,13 @@ export default {
 
            siteCDP:{ img:'/sitecdp.jpg' ,
                         title: "Refonte du site de l'élevage des Cimes de Pyrène",
-                        paragraphes: [ '- Utilisation de Nuxt.JS pour générer un site statique', '- Responsive design et accessibilité', "- SEO, Suivi d'audience", '- Contenu, photos, design, logo', "- Optimisation d'images"],
+                        paragraphes: [ '- Utilisation de Nuxt.JS pour générer un site statique', '- Responsive design et accessibilité', "- SEO, Suivi d'audience", '- Création du contenu : textes, photos, logo', "- Optimisation d'images"],
                         icones: ['/mininuxt.jpg','/minisass.png', '/googleanalytics.jpg'],
                         lien: 'Voir le site des Cimes de Pyrène', link: 'https://www.cimesdepyrene.fr'},
 
             sitesWordPress:{ img:'/sitepdp.jpg' ,
                         title: "Création de sites web avec WordPress",
-                        paragraphes: [ '- Utilisation du CMS WordPress pour pages statiques et blog', '- Création boutique en ligne avec Woocommerce',  '- Sécurité (WordFence)',"- SEO (YoastSEO)"],
+                        paragraphes: [ '- Utilisation du CMS WordPress pour pages statiques et blog', '- Constructeur de pages : Elementor',  '- Sécurité (WordFence)',"- SEO (YoastSEO)"],
                         icones: ['/wordpressicone.jpg'],
                         lien: 'Voir le site des Plumes de Pyrène', link: 'https://www.plumesdepyrene.fr'},
 

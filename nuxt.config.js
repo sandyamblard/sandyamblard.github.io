@@ -17,7 +17,7 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { name: 'description', content: 'CV Sandy Amblard, développeur web Vue.JS, NuxtJS, mais aussi docteur vétérinaire, éleveur canin. En recherche poste, télétravail possible, temps partiel possible' },
       {property:"og:title", content:"CV en ligne et port-folio, Sandy AMBLARD"},
-      {property: "og:type", content:"website"}, 
+      {property: "og:type", content:"website"},
       {property: "og:url", content:"https://sandyamblard.github.io/"},
       {property:"og:image", content:"https://sandyamblard.github.io/apercusite.jpg"},
       {property:"og:description", content:"CV en ligne et port-folio, Sandy AMBLARD, développeur web"}
@@ -27,11 +27,11 @@ export default {
       { rel:"preconnect", href:"https://fonts.gstatic.com"},
       { rel: "stylesheet", href:"https://fonts.googleapis.com/css2?&display=swap?family=Poppins:wght@200;400;600;800&display=swap&family=Merienda+One" }
     ],
-    script: [ 
+    script: [
       {src:"https://kit.fontawesome.com/32f1ce6b66.js", crossorigin: "anonymous"}
     ]
   },
-    
+
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [

@@ -8,8 +8,7 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "sass": "sass --watch ./assets/style/style.scss  ./assets/style/style.css",
-  
-    "prefix" : "postcss ./assets/style/style.css --use autoprefixer -d ./assets/style/prefixed/"
+    "prefix": "postcss ./assets/style/style.css --use autoprefixer -d ./assets/style/prefixed/"
   },
   "dependencies": {
     "core-js": "^3.9.1",
