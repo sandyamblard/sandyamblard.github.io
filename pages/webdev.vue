@@ -2,9 +2,15 @@
     <main>
         <section class='contenu'>
             <div class='entete entete--code'> <h1>Développeur web</h1></div>
-            <a href="#sidebar"><triangle></triangle></a>
+          <div class="centre">
+            <img src="/friseicones.png" alt="" class="friseicones">
+          </div>
+
+          <a href="#sidebar"><triangle></triangle></a>
             <div class='contenu-item'>
+
                 <h2>Réalisations</h2>
+
                 <div class='expe__list'>
                   <expeitem :expe='extranetPnp'></expeitem>
                     <expeitem :expe='sitesWordPress'></expeitem>
@@ -47,6 +53,9 @@
 
                     </li>
                 </ul>
+              <div class="centre">
+                <img src="/friseicones.png" alt="" class="friseicones">
+              </div>
             </div>
         </section>
         <sidebar>
@@ -116,11 +125,11 @@ export default {
                         icones: ['/mininuxt.jpg','/minisass.png', '/googleanalytics.jpg'],
                         lien: 'Voir le site des Cimes de Pyrène', link: 'https://www.cimesdepyrene.fr'},
 
-            sitesWordPress:{ img:'/sitepdp.jpg' ,
+            sitesWordPress:{ img:'/fermebonair.jpg' ,
                         title: "Création de sites web avec WordPress",
-                        paragraphes: [ '- Utilisation du CMS WordPress pour pages statiques et blog', '- Constructeur de pages : Elementor',  '- Sécurité (WordFence)',"- SEO (YoastSEO)"],
+                        paragraphes: [ "Depuis juillet 2021 :", '- Utilisation du CMS WordPress pour pages statiques et blog', '- Constructeur de pages : Elementor',  '- Sécurité (WordFence)',"- SEO (YoastSEO)", "- Intégration d'éléments interactifs (google maps, fil facebook)"],
                         icones: ['/wordpressicone.jpg'],
-                        lien: 'Voir le site des Plumes de Pyrène', link: 'https://www.plumesdepyrene.fr'},
+                        lien: 'Voir le site de la ferme du Bon\'Air', link: 'http://www.lafermedubonair.fr'},
 
          extranetPnp:{ img:'/extranetpnp.jpg' ,
             title: "Création d'un thème Drupal personnalisé pour un site extranet",

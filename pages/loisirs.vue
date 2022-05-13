@@ -6,17 +6,18 @@
             <div class='contenu-item'>
                 <h2>Centre d'intérêts</h2>
                 <div class='expe__list'>
-                    <expeitem :expe='renovation' class='maison'></expeitem>
-                    <expeitem :expe='fourgon' ></expeitem>
-                    <expeitem :expe='diy'></expeitem>
-                    <expeitem :expe='photo' class='maison' ></expeitem>
-                    <expeitem :expe='randos'  class='randos'></expeitem>
-                    <expeitem :expe='education' class='randos'></expeitem>
+                  <expeitem :expe='vulgarisation' ></expeitem>
+                  <expeitem :expe='photo' class='maison' ></expeitem>
+                  <expeitem :expe='renovation' class='maison'></expeitem>
+                  <expeitem :expe='fourgon' ></expeitem>
+                  <expeitem :expe='diy'></expeitem>
+                  <expeitem :expe='education' class='randos'></expeitem>
+                  <expeitem :expe='randos'  class='randos'></expeitem>
                 </div>
-            </div>  
+            </div>
             <div class='contenu-item'>
                 <h2>Formations et stages</h2>
-                <ul class='formations'> 
+                <ul class='formations'>
                     <li class="form__item">
                         <span>Avril 2012 : <span class="bold">Gestion de projet en médiation animale</span></span>, institut AGATEA à Colmar <br>
                     </li>
@@ -27,7 +28,7 @@
                         - Formation complémentaire de déléguée de l'association
                     </li>
                 </ul>
-            </div> 
+            </div>
         </section>
         <sidebar>
             <h2>Points forts spécifiques</h2>
@@ -40,7 +41,7 @@
                     <i class="fas fa-star"></i>{{ comp }}
                 </li>
             </ul>
-            
+
         </sidebar>
     </main>
 </template>
@@ -57,29 +58,34 @@ export default {
     },
     data(){
         return{
-             pointsforts: ['Créativité', 'Adaptabilité', 'Polyvalence', 'Optimisation'], 
+             pointsforts: ['Créativité', 'Adaptabilité', 'Polyvalence', 'Optimisation'],
             competences:['Photographie', 'Photoshop, Gimp', 'Bricolage', 'Travaux : conception, planification, réalisation, décoration',  "Organisation et optimisation d'espaces", 'Do It Yourself, Upcycling' ,  'Loisirs créatifs', "Décoration d'intérieur","Education canine, toutes races", "Education de chiens d'assistance"]
         ,renovation:{   img:'/maison.jpg' ,
-                    title: "Bricolage : rénovation d'une ferme", 
+                    title: "Bricolage : rénovation d'une ferme",
                     paragraphes: ['Depuis 2009 :',
-                        '- Rénovation habitation (second-oeuvre, décoration, de la conception à la réalisation', '- Habitats pour élevage : conception, création, gros-oeuvre, second-oeuvre', "- Constructions et aménagement de dépendances", "- Travaux extérieurs (jardin, clôtures...)", "- Construction de meubles sur-mesure"],  
+                        '- Rénovation habitation (second-oeuvre, décoration, de la conception à la réalisation', '- Habitats pour élevage : conception, création, gros-oeuvre, second-oeuvre', "- Constructions et aménagement de dépendances", "- Travaux extérieurs (jardin, clôtures...)", "- Construction de meubles sur-mesure"],
             },fourgon:{   img:'/fourgon.jpg' ,
-                    title: "Bricolage : aménagement de fourgons (type camping-car)", 
+                    title: "Bricolage : aménagement de fourgons (type camping-car)",
                     paragraphes: ['2010 et 2018  :',
-                        "Aménagement sur mesure de 2 fourgons pour transports sécurisés des chiens et hébergement lors de déplacements", "- Création du mobilier, électricité, isolation", "- Optimisation de l'espace"],  
+                        "Aménagement sur mesure de 2 fourgons pour transports sécurisés des chiens et hébergement lors de déplacements", "- Création du mobilier, électricité, isolation", "- Optimisation de l'espace"],
             },diy:{   img:'/diy.jpg' ,
-                    title: "DIY : création et relooking d'objets et meubles", 
-                    paragraphes: ['- Création sur-mesure ou upcycling','- Peinture décorative', '- Participation à des ateliers déco'],  
+                    title: "DIY : création et relooking d'objets et meubles",
+                    paragraphes: ['- Création sur-mesure ou upcycling','- Peinture décorative', '- Participation à des ateliers déco'],
             },photo:{   img:'/photo.jpg' ,
-                    title: "Photographie", 
-                    paragraphes: ['- Prises de vue', '- Edition avec photoshop ou Gimp', '- Création de montages'],  
+                    title: "Photographie",
+                    paragraphes: ['- Prises de vue', '- Edition avec photoshop ou Gimp', '- Création de montages'],
             },randos:{   img:'/voyages.jpg' ,
-                    title: "Randonnées et voyages", 
-                    paragraphes: ['- Randonnées en montagne (Alpes, Pyrénées), bivouacs', '- Voyages (France, Europe, USA) : ', 'Nombreux voyages en France,', 'Road-Trip de 3 semaines en Ecosse en 2019,', "5 jours chez l'habitant à Seattle (USA)"],  
+                    title: "Randonnées et voyages",
+                    paragraphes: ['- Randonnées en montagne (Alpes, Pyrénées), bivouacs', '- Voyages (France, Europe, USA) : ', 'Nombreux voyages en France,', 'Road-Trip de 3 semaines en Ecosse en 2019,', "5 jours chez l'habitant à Seattle (USA)"],
             },education:{   img:'/education.jpg' ,
-                    title: "Education canine", 
-                    paragraphes: ['- Education de base, méthode positive et bienveillante', '- Toutes races', "- Education de 10 chiens, de 4 races différentes, dont chiens d'assistance et chiens de concours ", '- Grandes connaissances en comportement canin', "- Clicker training", "- Médical training", "- Education spécifique aux sports canins", "- Education spécifique pour chiens d'assistance"],  
+                    title: "Education canine",
+                    paragraphes: ['- Education de base, méthode positive et bienveillante', '- Toutes races', "- Education de 10 chiens, de 4 races différentes, dont chiens d'assistance et chiens de concours ", '- Grandes connaissances en comportement canin', "- Clicker training", "- Médical training", "- Education spécifique aux sports canins", "- Education spécifique pour chiens d'assistance"],
             },
+          vulgarisation:{   img:'/livrets.jpg' ,
+            title: "Redaction d'articles informatifs",
+            paragraphes: ["- Vulgarisation scientifique : rédaction d'articles en ligne sur les chiens, les volailles et l'élevage canin et avicole", '- Rédaction d\'un livret informatif sur l\'éducation, l\'alimentation et l\'entretien du chien à destination des familles adoptantes de chiots (60 pages illustrées)', '- Réalisations de vidéos tutorielles sur l\'éducation canine'],
+            lien: "Voir mes articles canins", link: 'https://www.cimesdepyrene.fr/conseils'
+          },
         }
     }
 }

@@ -51,7 +51,58 @@
     margin-bottom: 0em;
     text-align: center;
   }
+
 }
+
+
+.expe__item--index{
+  padding: 0;
+  height: 45vw;
+  @include tab-version {
+    height: 25vw;
+    //margin-left: 10%;
+   // width: 80%;
+  }
+  @include desk-version {
+   // margin-left: 12.25%;
+   // width: 75%;
+    height: 25vw;
+  }
+  &:hover,
+  &:focus {
+    transform: scale(1.03);
+    box-shadow: 2px 2px 8px grey;
+    transition: 0.3s;
+  }
+/*&:nth-child(1){
+  @include desk-version{
+    margin-left: 0%;
+  }
+
+}
+  &:nth-child(2){
+    @include desk-version{
+      margin-left: 8.3%;
+    }
+
+  }
+  &:nth-child(3){
+    @include desk-version{
+      margin-left: 16.6%;
+    }
+
+  }
+  &:nth-child(4){
+    @include desk-version{
+      margin-left: 25%;
+    }
+
+  }*/
+}
+
+
+
+
 
 .expe {
   &--title {
@@ -63,7 +114,7 @@
     // height: 50px;
     width: 100%;
     object-fit: cover;
-    object-position: center 10%;
+    //object-position: center 10%;
     height: 35vw;
     cursor: pointer;
     @include tab-version {
@@ -74,6 +125,7 @@
     }
   }
 }
+
 
 .dev-icone {
   height: 40px;
@@ -131,6 +183,14 @@
 }
 .coureurs .expe--img {
   object-position: center 58%;
+}
+
+.expe__item--dogdancing .expe--img {
+  object-position: center 80%;
+}
+
+.troupeau .expe--img {
+  object-position: 10% 60%;
 }
 
 .itemsolo .expe--img {

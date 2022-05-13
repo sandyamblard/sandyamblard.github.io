@@ -12,10 +12,8 @@ body {
 }
 
 main {
-  background-color: $color-fond;
+  background: $color-fond;
   min-height: 100vh;
-  //display: flex;
-  //flex-direction: column-reverse;
   @include tab-version {
     padding-top: 20vw;
     padding-bottom: 2.5em;
@@ -27,6 +25,16 @@ main {
     flex-direction: row-reverse;
     padding-bottom: 2.5em;
   }
+
+}
+.main--index{
+ /*background :  top right no-repeat url("/paws-mob.png"), $color-fond ;
+ @include tab-version{
+    background :  top 6% right no-repeat url("/paws-tab.png"), $color-fond ;
+  }
+  @include desk-version{
+    background :  top 6% right no-repeat url("/iconesdev.png"), $color-fond;
+  }*/
 }
 
 button {

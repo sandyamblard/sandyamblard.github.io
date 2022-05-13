@@ -41,6 +41,16 @@
   }
 }
 
+.expe__item--index h2{
+  font-size: 1.2em;
+  @include desk-and-tab-version{
+    font-size: 1.3em;
+  }
+  &::after{
+    display: none;
+  }
+}
+
 .entete--code {
   background-image: url("/code-mob.jpg");
   @include desk-and-tab-version {
@@ -123,4 +133,16 @@
 }
 
 
+.friseicones{
 
+  max-width: 100%;
+  margin-top: 3vw;
+  @include desk-and-tab-version{
+    height:40px;
+  }
+}
+
+.centre {
+  display: flex;
+  justify-content: center;
+}

@@ -12,7 +12,7 @@ body {
 }
 
 main {
-  background-color: #f8f6f6;
+  background: #f8f6f6;
   min-height: 100vh;
 }
 @media all and (min-width: 767px) and (max-width: 1023px) {
@@ -29,6 +29,16 @@ main {
     flex-direction: row-reverse;
     padding-bottom: 2.5em;
   }
+}
+
+.main--index {
+  /*background :  top right no-repeat url("/paws-mob.png"), $color-fond ;
+  @include tab-version{
+     background :  top 6% right no-repeat url("/paws-tab.png"), $color-fond ;
+   }
+   @include desk-version{
+     background :  top 6% right no-repeat url("/iconesdev.png"), $color-fond;
+   }*/
 }
 
 button {
@@ -151,101 +161,57 @@ h1 {
 }
 .bann {
   display: block;
-  width: 95%;
-  height: 45vw;
-  margin-left: 2.5%;
+  width: 100%;
+  height: 900vw;
+  margin: 0;
   text-decoration: none;
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: 55%;
-  box-shadow: 2px 2px 5px grey;
-  border-bottom: black solid 3px;
-}
-@media all and (min-width: 767px) and (max-width: 1023px) {
-  .bann {
-    height: 25vw;
-    margin-left: 10%;
-    width: 80%;
-  }
+  border-bottom: #f8de9d solid 3px;
 }
 @media all and (min-width: 1023px) {
   .bann {
-    margin-left: 12.25%;
-    width: 75%;
-    height: 25vw;
+    height: 100vw;
   }
 }
-.bann:hover, .bann:focus {
-  transform: scale(1.03);
-  box-shadow: 2px 2px 15px grey;
-  transition: 0.3s;
-}
 .bann-caption {
-  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-}
-.bann p {
-  color: #fffefe;
-}
-.bann p:nth-child(2) {
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 1.2em;
-  background-color: rgba(63, 22, 13, 0.7);
-  border-radius: 10px;
-  box-shadow: 3px 3px 8px #FDF6E4;
-  padding: 0.4em;
-  font-style: italic;
-}
-@media all and (min-width: 767px) {
-  .bann p:nth-child(2) {
-    font-size: 1.4em;
-  }
-}
-@media all and (max-width: 767px) {
-  .bann p:nth-child(2) {
-    margin-bottom: 0;
-  }
-}
-.bann p:nth-child(3) {
-  width: 100%;
+  color: #BD4328;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.6);
-  margin-bottom: 0;
+  font-style: italic;
+  font-weight: 500;
 }
-@media all and (min-width: 767px) {
-  .bann p:nth-child(3) {
-    padding-top: 0.8em;
-    padding-bottom: 0.8em;
-  }
+.bann-title {
+  width: 100%;
+  margin: 0;
+  padding: 0.5em;
+  color: #E6D8CA;
+}
+.bann-title .fa-paw, .bann-title .fa-stethoscope, .bann-title .fa-dog, .bann-title .fa-pen-nib, .bann-title .fa-trophy, .bann-title .fa-code, .bann-title .fa-camera {
+  background-color: #785939;
+  border-radius: 50%;
+  font-size: 0.9em;
+  padding: 0.4em;
+  margin-right: 0.4em;
+  margin-bottom: 0.2em;
+  color: white;
+  box-shadow: 1px 1px 3px lightgrey;
 }
 
 .bann--dev {
   background-image: url("/code-mob.jpg");
-  height: 68vw;
-  border-radius: 10px 10px 0 0;
 }
 @media all and (min-width: 767px) {
   .bann--dev {
     background-image: url("/code.jpg");
   }
 }
-@media all and (min-width: 767px) and (max-width: 1023px) {
-  .bann--dev {
-    height: 32vw;
-  }
-}
-@media all and (min-width: 1400px) {
-  .bann--dev {
-    height: 20vw;
-  }
-}
-
 .bann--veto {
   background-image: url("/vet-mob.jpg");
 }
@@ -261,7 +227,6 @@ h1 {
 }
 @media all and (min-width: 1400px) {
   .bann--veto {
-    height: 14vw;
     background-position-y: 35%;
   }
 }
@@ -277,39 +242,32 @@ h1 {
 }
 @media all and (min-width: 1023px) {
   .bann--compet {
-    background-image: url("/banncompet.jpg");
+    background-image: url("/sportscanins.jpg");
   }
 }
 @media all and (min-width: 1400px) {
   .bann--compet {
-    height: 14vw;
     background-position-y: 10%;
   }
 }
 
 .bann--elevage {
-  background-image: url("/bannchiots-mob.jpg");
+  background-image: url("/bannchiots-mob-old.jpg");
   background-position-y: 50%;
+  background-position-x: 50%;
 }
 @media all and (min-width: 767px) and (max-width: 1023px) {
   .bann--elevage {
-    background-image: url("/bannchiots-tab.jpg");
+    background-image: url("/bannchiots-tab-old.jpg");
   }
 }
 @media all and (min-width: 1023px) {
   .bann--elevage {
-    background-image: url("/bannchiots.jpg");
+    background-image: url("/bannchiots-old.jpg");
   }
 }
-@media all and (min-width: 1400px) {
-  .bann--elevage {
-    height: 14vw;
-  }
-}
-
 .bann--loisirs {
   background-image: url("/bannloisirs-mob.jpg");
-  border-radius: 0 0 10px 10px;
   background-position-y: 75%;
 }
 @media all and (min-width: 767px) and (max-width: 1023px) {
@@ -322,11 +280,6 @@ h1 {
     background-image: url("/bannloisirs.jpg");
   }
 }
-@media all and (min-width: 1400px) {
-  .bann--loisirs {
-    height: 14vw;
-  }
-}
 .bann--loisirs p:last-child {
   border-radius: 0 0 10px 10px;
 }
@@ -335,6 +288,7 @@ h1 {
   margin-bottom: 2.5vw;
   margin-top: 2vw;
   text-align: justify;
+  line-height: 1.5em;
 }
 .intro ul {
   margin-top: 0;
@@ -355,7 +309,7 @@ h1 {
   display: block;
   width: 100%;
   height: 0.15em;
-  background: linear-gradient(to right, #f8f6f6 30%, #BD4328, #f8f6f6 70%);
+  background: linear-gradient(to right, transparent 30%, #BD4328, transparent 70%);
   margin-top: 1.5em;
   margin-bottom: 1.5em;
   border-radius: 5px;
@@ -398,6 +352,18 @@ h1 {
   .contenu h2::after {
     width: 9em;
   }
+}
+
+.expe__item--index h2 {
+  font-size: 1.2em;
+}
+@media all and (min-width: 767px) {
+  .expe__item--index h2 {
+    font-size: 1.3em;
+  }
+}
+.expe__item--index h2::after {
+  display: none;
 }
 
 .entete--code {
@@ -497,6 +463,21 @@ h1 {
 .list-bis li {
   margin-top: 0.6em;
   margin-bottom: 0.6em;
+}
+
+.friseicones {
+  max-width: 100%;
+  margin-top: 3vw;
+}
+@media all and (min-width: 767px) {
+  .friseicones {
+    height: 40px;
+  }
+}
+
+.centre {
+  display: flex;
+  justify-content: center;
 }
 
 .topbar {
@@ -849,7 +830,7 @@ h1 {
   margin-right: 0.4em;
   margin-bottom: 0.4em;
 }
-.sidebar .fa-code, .sidebar .fa-stethoscope, .sidebar .fa-paw, .sidebar .fa-trophy, .sidebar .fa-camera {
+.sidebar .fa-code, .sidebar .fa-stethoscope, .sidebar .fa-paw, .sidebar .fa-dog, .sidebar .fa-hammer, .sidebar .fa-pen-nib, .sidebar .fa-camera {
   background-color: #ca472b;
   border-radius: 50%;
   font-size: 1.1em;
@@ -893,6 +874,7 @@ h1 {
   padding-left: 1em;
   padding-right: 1em;
   text-align: justify;
+  line-height: 1.2em;
 }
 @media all and (min-width: 1023px) {
   .profil {
@@ -1084,6 +1066,50 @@ h1 {
   text-align: center;
 }
 
+.expe__item--index {
+  padding: 0;
+  height: 45vw;
+  /*&:nth-child(1){
+    @include desk-version{
+      margin-left: 0%;
+    }
+
+  }
+    &:nth-child(2){
+      @include desk-version{
+        margin-left: 8.3%;
+      }
+
+    }
+    &:nth-child(3){
+      @include desk-version{
+        margin-left: 16.6%;
+      }
+
+    }
+    &:nth-child(4){
+      @include desk-version{
+        margin-left: 25%;
+      }
+
+    }*/
+}
+@media all and (min-width: 767px) and (max-width: 1023px) {
+  .expe__item--index {
+    height: 25vw;
+  }
+}
+@media all and (min-width: 1023px) {
+  .expe__item--index {
+    height: 25vw;
+  }
+}
+.expe__item--index:hover, .expe__item--index:focus {
+  transform: scale(1.03);
+  box-shadow: 2px 2px 8px grey;
+  transition: 0.3s;
+}
+
 .expe--title {
   font-weight: bold;
   font-size: 1.1em;
@@ -1091,7 +1117,6 @@ h1 {
 .expe--img {
   width: 100%;
   object-fit: cover;
-  object-position: center 10%;
   height: 35vw;
   cursor: pointer;
 }
@@ -1165,6 +1190,14 @@ h1 {
 
 .coureurs .expe--img {
   object-position: center 58%;
+}
+
+.expe__item--dogdancing .expe--img {
+  object-position: center 80%;
+}
+
+.troupeau .expe--img {
+  object-position: 10% 60%;
 }
 
 .itemsolo .expe--img {
@@ -1338,6 +1371,10 @@ h1 {
   .close-modale p {
     font-size: 1.1em;
   }
+}
+
+.contenu {
+  background-color: transparent;
 }
 
 /*# sourceMappingURL=style.css.map */
