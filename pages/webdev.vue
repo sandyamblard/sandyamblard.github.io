@@ -9,6 +9,16 @@
           <a href="#sidebar"><triangle></triangle></a>
             <div class='contenu-item'>
 
+              <div class="subtitle">
+                Habituée du CMS WordPress mais aussi des frameworks Vue.JS et Nuxt.JS, j'aime créer, personnaliser et optimiser des sites web pour les adapter aux besoins du client.
+                <br>Mes petits plus :
+                <ul class="mt0">
+                  <li>une grande implication et le sens du détail</li>
+                  <li>écoute et empathie, pour comprendre et m'adapter aux besoins du client</li>
+                  <li>adaptatibilité et personnalisation de chaque projet</li>
+                </ul>
+              </div>
+
                 <h2>Réalisations</h2>
 
                 <div class='expe__list'>

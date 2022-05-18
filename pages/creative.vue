@@ -3,19 +3,24 @@
         <section class='contenu' aria-label='Expériences et formations'>
             <div class='entete entete--loisirs'> <h1>Autres</h1></div>
             <a href="#sidebar"><triangle></triangle></a>
+
             <div class='contenu-item'>
-                <h2>Centre d'intérêts</h2>
+              <p class="subtitle">
+                La créativité à une place importante dans ma vie, depuis la photographie, jusqu'au bricolage, en passant par la rédaction d'articles.
+              </p>
+
+                <!--h2>Activités créatives</h2-->
                 <div class='expe__list'>
                   <expeitem :expe='vulgarisation' ></expeitem>
                   <expeitem :expe='photo' class='maison' ></expeitem>
                   <expeitem :expe='renovation' class='maison'></expeitem>
                   <expeitem :expe='fourgon' ></expeitem>
                   <expeitem :expe='diy'></expeitem>
-                  <expeitem :expe='education' class='randos'></expeitem>
-                  <expeitem :expe='randos'  class='randos'></expeitem>
+                  <!--expeitem :expe='education' class='randos'></expeitem-->
+                  <!--expeitem :expe='randos'  class='randos'></expeitem-->
                 </div>
             </div>
-            <div class='contenu-item'>
+            <!--div class='contenu-item'>
                 <h2>Formations et stages</h2>
                 <ul class='formations'>
                     <li class="form__item">
@@ -28,7 +33,7 @@
                         - Formation complémentaire de déléguée de l'association
                     </li>
                 </ul>
-            </div>
+            </div-->
         </section>
         <sidebar>
             <h2>Points forts spécifiques</h2>
@@ -59,7 +64,7 @@ export default {
     data(){
         return{
              pointsforts: ['Créativité', 'Adaptabilité', 'Polyvalence', 'Optimisation'],
-            competences:['Photographie', 'Photoshop, Gimp', 'Bricolage', 'Travaux : conception, planification, réalisation, décoration',  "Organisation et optimisation d'espaces", 'Do It Yourself, Upcycling' ,  'Loisirs créatifs', "Décoration d'intérieur","Education canine, toutes races", "Education de chiens d'assistance"]
+            competences:["Rédaction",'Photographie', 'Photoshop, Gimp', 'Bricolage et travaux',  "Organisation et optimisation d'espaces", 'Do It Yourself, Upcycling' ,  'Loisirs créatifs', "Décoration d'intérieur"]
         ,renovation:{   img:'/maison.jpg' ,
                     title: "Bricolage : rénovation d'une ferme",
                     paragraphes: ['Depuis 2009 :',
@@ -73,7 +78,7 @@ export default {
                     paragraphes: ['- Création sur-mesure ou upcycling','- Peinture décorative', '- Participation à des ateliers déco'],
             },photo:{   img:'/photo.jpg' ,
                     title: "Photographie",
-                    paragraphes: ['- Prises de vue', '- Edition avec photoshop ou Gimp', '- Création de montages'],
+                    paragraphes: ['- Prises de vue lors de voyages et randonnées, mise en valeur des animaux de mes élevages ', '- Optimisation des images avec photoshop ou Gimp', '- Création de montages'],
             },randos:{   img:'/voyages.jpg' ,
                     title: "Randonnées et voyages",
                     paragraphes: ['- Randonnées en montagne (Alpes, Pyrénées), bivouacs', '- Voyages (France, Europe, USA) : ', 'Nombreux voyages en France,', 'Road-Trip de 3 semaines en Ecosse en 2019,', "5 jours chez l'habitant à Seattle (USA)"],
@@ -83,7 +88,7 @@ export default {
             },
           vulgarisation:{   img:'/livrets.jpg' ,
             title: "Redaction d'articles informatifs",
-            paragraphes: ["- Vulgarisation scientifique : rédaction d'articles en ligne sur les chiens, les volailles et l'élevage canin et avicole", '- Rédaction d\'un livret informatif sur l\'éducation, l\'alimentation et l\'entretien du chien à destination des familles adoptantes de chiots (60 pages illustrées)', '- Réalisations de vidéos tutorielles sur l\'éducation canine'],
+            paragraphes: ["- Vulgarisation scientifique : rédaction d'articles en ligne sur les chiens, les volailles et l'élevage canin et avicole", '- Rédaction d\'un livret informatif sur l\'éducation, l\'alimentation et l\'entretien du chien à destination des familles adoptantes de mon élevage (60 pages illustrées)', '- Réalisations de vidéos tutorielles sur l\'éducation canine'],
             lien: "Voir mes articles canins", link: 'https://www.cimesdepyrene.fr/conseils'
           },
         }

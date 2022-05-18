@@ -129,6 +129,10 @@ h1 {
   font-weight: bold;
 }
 
+.mt0 {
+  margin-top: 0;
+}
+
 @keyframes entreeitems {
   0% {
     transform: translateY(4vh);
@@ -242,7 +246,7 @@ h1 {
 }
 @media all and (min-width: 1023px) {
   .bann--compet {
-    background-image: url("/sportscanins.jpg");
+    background-image: url("/banncompet.jpg");
   }
 }
 @media all and (min-width: 1400px) {
@@ -267,17 +271,17 @@ h1 {
   }
 }
 .bann--loisirs {
-  background-image: url("/bannloisirs-mob.jpg");
-  background-position-y: 75%;
+  background-image: url("/boiteobr-mob.jpg");
+  background-position-y: 0;
 }
 @media all and (min-width: 767px) and (max-width: 1023px) {
   .bann--loisirs {
-    background-image: url("/bannloisirs-tab.jpg");
+    background-image: url("/boiteobr-tab.jpg");
   }
 }
 @media all and (min-width: 1023px) {
   .bann--loisirs {
-    background-image: url("/bannloisirs.jpg");
+    background-image: url("/boiteobr.jpg");
   }
 }
 .bann--loisirs p:last-child {
@@ -420,25 +424,26 @@ h1 {
 }
 
 .entete--loisirs {
-  background-image: url("/bannloisirs-mob.jpg");
-  background-position: center 57%;
+  background-image: url("/boiteobr-mob.jpg");
+  background-position: center 45%;
 }
 @media all and (min-width: 767px) and (max-width: 1023px) {
   .entete--loisirs {
-    background-image: url("/bannloisirs-tab.jpg");
+    background-image: url("/boiteobr-tab.jpg");
   }
 }
 @media all and (min-width: 1023px) {
   .entete--loisirs {
-    background-image: url("/bannloisirs.jpg");
+    background-image: url("/boiteobr.jpg");
   }
 }
 
 .subtitle {
-  color: #785939;
-  text-align: center;
-  margin-top: 0.5em;
-  font-size: 1.3em;
+  color: #332618;
+  text-align: left;
+  margin-top: 3em;
+  font-size: 1.1em;
+  margin-bottom: 3em;
 }
 
 .form__item {
