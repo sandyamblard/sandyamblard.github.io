@@ -1,7 +1,7 @@
 <template>
     <main>
         <section class='contenu' aria-label='Expériences et formations'>
-            <div class='entete entete--loisirs'> <h1>Autres</h1></div>
+            <div class='entete entete--loisirs'> <h1>Activités créatives</h1></div>
             <a href="#sidebar"><triangle></triangle></a>
 
             <div class='contenu-item'>
