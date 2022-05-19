@@ -4,9 +4,9 @@
       <h1 class="titre--intro">Une développeuse web pas comme les autres !</h1>
 
       <div class="intro">
-        <NuxtLink to='/webdev'>Développeuse web</NuxtLink>, je suis disponible pour la création et/ou optimisation de sites internet pour les petites entreprises ou pour rejoindre une équipe de développeurs afin intégrer des projets de plus grande envergure.
+        <NuxtLink to='/webdev'>Développeuse web</NuxtLink>, je suis disponible pour la création et/ou optimisation de sites internet pour les petites entreprises ou pour rejoindre une équipe de développeurs afin d'intégrer des projets de plus grande envergure.
         <br>
-        <br>Mes activités passées et connexes m'ont apportés de solides bagages variés. En effet, après avoir exercé en tant que <NuxtLink to='/animaux'>Docteur vétérinaire</NuxtLink>, <!--tout en étant <NuxtLink to='/elevage'>éleveuse</NuxtLink> et <NuxtLink to='/competitions'>compétitrice</NuxtLink>, <NuxtLink to='/loisirs'>(et plus encore !)</NuxtLink-->je me suis orienté vers le métier passionnant et positif de <NuxtLink to='/webdev'>développeur Web</NuxtLink>.
+        <br>Mes activités passées et connexes m'ont apporté un bagage solide et varié. En effet, après avoir exercé en tant que <NuxtLink to='/animaux'>Docteur vétérinaire</NuxtLink>, je me suis orientée vers le métier passionnant et positif de <NuxtLink to='/webdev'>développeur Web</NuxtLink>.
         Une activité qui me ressemble car elle allie plusieurs de mes valeurs :
         <ul>
             <li>à la fois créativité et technique,</li>
@@ -14,7 +14,7 @@
             <li>esprit d'équipe et autonomie,</li>
             <li>le tout avec une touche de dépassement de soi.</li>
     </ul>
-        <br>En effet, en plus de mes travaux auprès des animaux et de la clientèle <NuxtLink to='/animaux'>(vétérinaire et éleveuse)</NuxtLink> et de mes <NuxtLink to='/creative'>activités créatives</NuxtLink>, je suis <NuxtLink to='/competitions'>compétitrice</NuxtLink> depuis le plus jeune âge et donc je suis habituée aux challenges.
+        <br>En effet, en plus de mes travaux auprès des animaux et de la clientèle <NuxtLink to='/animaux'>(vétérinaire et éleveuse)</NuxtLink> et de mes <NuxtLink to='/creative'>activités créatives</NuxtLink>, je suis <NuxtLink to='/competitions'>compétitrice</NuxtLink> depuis mon plus jeune âge et donc je suis habituée aux défis.
         <br>
         <br>N'hésitez pas à parcourir ce site-CV pour en savoir plus sur mon parcours, mes formations, expériences et compétences !
       </div>

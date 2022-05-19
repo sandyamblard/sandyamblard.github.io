@@ -133,7 +133,7 @@ export default {
           },
           education:{   img:'/education.jpg' ,
             title: "Education canine",
-            paragraphes: ['- Education de base, méthode positive et bienveillante', '- Toutes races', "- Education de 10 chiens, de 4 races différentes, dont chiens d'assistance et chiens de concours ", "- Eveil, socialisation et pré-éducation de 12 portées de bergers australiens" , '- Grandes connaissances en comportement canin', "- Clicker training", "- Médical training", "- Education spécifique aux sports canins y compris en concours", "- Education spécifique pour chiens d'assistance, déléguée de l'association Handi-Chiens", "- Rédaction d'un livret sur l'éducation canine illustré de vidéos tutorielles"],
+            paragraphes: ['Depuis 2002 :','- Education de base, méthode positive et bienveillante', '- Toutes races', "- Education de 10 chiens, de 4 races différentes, dont chiens d'assistance et chiens de concours ", "- Eveil, socialisation et pré-éducation de 12 portées de bergers australiens" , '- Grandes connaissances en comportement canin', "- Clicker training", "- Médical training", "- Education spécifique aux sports canins y compris en concours", "- Education spécifique pour chiens d'assistance, déléguée de l'association Handi-Chiens", "- Rédaction d'un livret sur l'éducation canine illustré de vidéos tutorielles"],
           },
         }
     },

@@ -10,7 +10,7 @@
             <div class='contenu-item'>
 
               <div class="subtitle">
-                Habituée du CMS WordPress mais aussi des frameworks Vue.JS et Nuxt.JS, j'aime créer, personnaliser et optimiser des sites web pour les adapter aux besoins du client.
+                Familière du CMS WordPress mais aussi des frameworks Vue.JS et Nuxt.JS, j'aime créer, personnaliser et optimiser des sites web pour les adapter aux besoins du client.
                 <br>Mes petits plus :
                 <ul class="mt0">
                   <li>une grande implication et le sens du détail</li>
